@@ -8,6 +8,20 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector(".header");
+      const sections = document.querySelectorAll("section[id]");
+      sections.forEach((section) => {
+        const navHeight = header.offsetHeight;
+        const sectionTop = section.offsetTop - navHeight;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionTop + sectionHeight
+        ) {
+          setActiveNav(`#${section.id}`);
+        }
+      });
+
       if (window.scrollY > 20) {
         header.classList.add("scroll-header");
       } else {
@@ -38,24 +52,26 @@ const Header = () => {
           <ul className="nav__list grid">
             {[
               {
-                id: "homeScrolledUp",
-                href: "#home",
+                scrollBackToHomeId: "homeScrolledUp",
+                id: "home",
                 text: "Home",
                 icon: "estate",
               },
-              { href: "#about", text: "About", icon: "user" },
-              { href: "#skills", text: "Skills", icon: "file-alt" },
-              { href: "#services", text: "Services", icon: "briefcase-alt" },
-              { href: "#portfolio", text: "Portfolio", icon: "scenery" },
-              { href: "#contact", text: "Contact", icon: "message" },
+              { id: "about", text: "About", icon: "user" },
+              { id: "skills", text: "Skills", icon: "file-alt" },
+              { id: "services", text: "Services", icon: "briefcase-alt" },
+              { id: "portfolio", text: "Portfolio", icon: "scenery" },
+              { id: "contact", text: "Contact", icon: "message" },
             ].map((item) => (
-              <li key={item.href} className="nav_item">
+              <li key={item.id} className="nav_item">
                 <a
-                  {...(item.id && { id: item.id })}
-                  href={item.href}
-                  onClick={() => handleNavClick(item.href)}
+                  {...(item.scrollBackToHomeId && {
+                    id: item.scrollBackToHomeId,
+                  })}
+                  href={`#${item.id}`}
+                  onClick={() => handleNavClick(`#${item.id}`)}
                   className={
-                    activeNav === item.href
+                    activeNav === `#${item.id}`
                       ? "nav__link active-link"
                       : "nav__link"
                   }
