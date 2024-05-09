@@ -1,5 +1,21 @@
 import React from "react";
 import "./footer.css";
+
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/profile.php?id=100087186196856",
+    iconClass: "bx bxl-facebook",
+  },
+  {
+    href: "https://www.instagram.com/santhoshsivkumar/",
+    iconClass: "bx bxl-instagram",
+  },
+  {
+    href: "https://twitter.com/San_sivkumar",
+    iconClass: "bx bxl-twitter",
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -25,36 +41,21 @@ const Footer = () => {
         </ul>
 
         <div className="footer__social">
-          <a
-            rel="noreferrer"
-            href="https://www.facebook.com/profile.php?id=100087186196856"
-            className="footer__social-link"
-            target={"_blank"}
-          >
-            <i class="bx bxl-facebook"></i>
-          </a>
-
-          <a
-            rel="noreferrer"
-            href="https://www.instagram.com/santhoshsivkumar/"
-            className="footer__social-link"
-            target={"_blank"}
-          >
-            <i class="bx bxl-instagram"></i>
-          </a>
-
-          <a
-            rel="noreferrer"
-            href="https://twitter.com/San_sivkumar"
-            className="footer__social-link"
-            target={"_blank"}
-          >
-            <i class="bx bxl-twitter"></i>
-          </a>
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.href}
+              className="footer__social-link"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className={link.iconClass}></i>
+            </a>
+          ))}
         </div>
 
         <span className="footer__copy">
-          &#169; 2024-2016 SanthoshSivakumar. All rigths reserved
+          &#169; {new Date().getFullYear()} Santhosh Sivakumar
         </span>
       </div>
     </footer>

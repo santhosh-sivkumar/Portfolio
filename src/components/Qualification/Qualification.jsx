@@ -25,17 +25,17 @@ const Qualification = () => {
     {
       title: "BE.ECE",
       subtitle: "Rathinam Technical Campus - Coimbatore",
-      calendar: "2018 - 2022",
+      calendar: " 2018 - 2022",
     },
     {
       title: "HSC",
       subtitle: "Malar Matric. Hr. Sec. School - Karur",
-      calendar: "2017 - 2018",
+      calendar: " 2017 - 2018",
     },
     {
       title: "SSLC",
       subtitle: "GHS Manavadi - Karur",
-      calendar: "2015 - 2016",
+      calendar: " 2015 - 2016",
     },
   ];
 
@@ -43,12 +43,12 @@ const Qualification = () => {
     {
       title: "Software Engineer L3",
       subtitle: "ClaySys Technologies PVT LTD - Coimbatore, TN",
-      calendar: "OCT 2022 - OCT 2023",
+      calendar: " OCT 2022 - OCT 2023",
     },
     {
       title: "Software Engineer L1",
       subtitle: "ClaySys Technologies PVT LTD - Coimbatore, TN",
-      calendar: "MAR 2022 - OCT 2022",
+      calendar: " MAR 2022 - OCT 2022",
     },
   ];
 
