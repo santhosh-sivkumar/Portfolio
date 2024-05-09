@@ -12,8 +12,8 @@ const Skills = () => {
     ],
     [
       { name: "MySQL", level: "Intermediate" },
-      { name: "Microsoft SQL Server", level: "" },
-      { name: "Firebase", level: "" },
+      { name: "Microsoft SQL", level: "Intermediate" },
+      { name: "Git", level: "Intermediate" },
     ],
   ];
   const Group2 = [
@@ -24,8 +24,8 @@ const Skills = () => {
     ],
     [
       { name: "Bootstrap", level: "Intermediate" },
-      { name: "Git", level: "Intermediate" },
       { name: "React", level: "Intermediate" },
+      { name: "Asp.Net", level: "Advanced" },
     ],
   ];
   return (
