@@ -15,7 +15,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     emailjs
-      .sendForm("servi2ce_kkez89e", "template_434hi8a", form.current, {
+      .sendForm("service_kkez89e", "template_434hi8a", form.current, {
         publicKey: "d7-sgfMZaY11mOF61",
       })
       .then(
@@ -32,6 +32,9 @@ const Contact = () => {
           setNegativeMessage(
             "Failed to send your message. Please try again later."
           );
+          setTimeout(() => {
+            setPositiveMessage("");
+          }, 3000);
         }
       )
       .finally(() => {
