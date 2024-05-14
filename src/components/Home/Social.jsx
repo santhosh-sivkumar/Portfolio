@@ -5,14 +5,17 @@ const Social = () => {
     {
       href: "https://www.instagram.com/santhoshsivkumar/",
       iconClass: "uil uil-instagram",
+      title: "instagram-santhoshsivkumar",
     },
     {
       href: "https://dribbble.com/santhosh-sivkumar",
       iconClass: "uil uil-dribbble",
+      title: "dribbble-santhoshsivkumar",
     },
     {
       href: "https://github.com/santhosh-sivkumar",
       iconClass: "uil uil-github-alt",
+      title: "github-santhoshsivkumar",
     },
   ];
 
@@ -20,6 +23,7 @@ const Social = () => {
     <div className="home__social">
       {socialLinks.map((link, index) => (
         <a
+          title={link.title}
           key={index}
           href={link.href}
           className="home__social-icon"

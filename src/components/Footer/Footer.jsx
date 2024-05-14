@@ -1,48 +1,49 @@
 import React from "react";
 import "./footer.css";
 
+const navigationItems = ["About", "Projects", "Services"];
+
 const socialLinks = [
   {
     href: "https://www.facebook.com/profile.php?id=100087186196856",
     iconClass: "bx bxl-facebook",
+    title: "facebook-santhoshsivkumar",
   },
   {
     href: "https://www.instagram.com/santhoshsivkumar/",
     iconClass: "bx bxl-instagram",
+    title: "instagram-santhoshsivkumar",
   },
   {
     href: "https://twitter.com/San_sivkumar",
     iconClass: "bx bxl-twitter",
+    title: "twitter-santhoshsivkumar",
   },
 ];
 
 const Footer = () => {
+  const myName = " Santhosh Sivakumar";
   return (
     <footer className="footer">
       <div className="footer__container container">
-        <h1 className="footer__title">Santhosh S</h1>
-
+        <h1 className="footer__title">Let's work together...</h1>
         <ul className="footer__list">
-          <li>
-            <a href="#about" className="footer__link">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" className="footer__link">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a href="#services" className="footer__link">
-              Services
-            </a>
-          </li>
+          {navigationItems.map((title, index) => (
+            <li key={index}>
+              <a
+                title={title}
+                href={`#${title.toLowerCase()}`}
+                className="footer__link"
+              >
+                {title}
+              </a>
+            </li>
+          ))}
         </ul>
-
         <div className="footer__social">
           {socialLinks.map((link, index) => (
             <a
+              title={link.title}
               key={index}
               href={link.href}
               className="footer__social-link"
@@ -53,10 +54,15 @@ const Footer = () => {
             </a>
           ))}
         </div>
+        <label title={myName} className="footer__codedBy">
+          Coded By
+          <span className="footer__ownerName">{myName}</span>
+        </label>
 
-        <span className="footer__copy">
-          &#169; {new Date().getFullYear()} Santhosh Sivakumar
-        </span>
+        <label className="footer__copy">
+          &#169; {new Date().getFullYear()} Created for Practice
+          <i className="bx bx-wink-smile"></i>
+        </label>
       </div>
     </footer>
   );

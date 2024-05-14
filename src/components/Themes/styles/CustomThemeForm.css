@@ -1,0 +1,11 @@
+/* inputs  */
+
+.themes__form-input {
+  width: 100%;
+  border: var(--border-color);
+  background: none;
+  color: var(--text-color);
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
