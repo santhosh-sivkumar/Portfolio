@@ -211,6 +211,7 @@ function ColorPicker() {
         );
       }
     }
+    // eslint-disable-next-line
   }, [activeThemeInCustomThemes, enableColors]);
   useEffect(() => {
     if (enableColors) {
@@ -226,6 +227,7 @@ function ColorPicker() {
         activeThemeInDefaultThemes
       );
     }
+    // eslint-disable-next-line
   }, [activeThemeInDefaultThemes, enableColors]);
 
   return (
@@ -255,7 +257,7 @@ function ColorPicker() {
             }
             checked={enableColors}
             onChange={handleEnableChange}
-            icons={["bx bxs-wink-tongue", "bx bxs-cool"]}
+            icons={["uil uil-check-circle", "uil uil-times-circle"]}
             containerClass="colorpicker-toggle-container"
           />
         </div>
