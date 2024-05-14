@@ -10,19 +10,20 @@
 .qualification__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  color: var(--title-color);
+  color: var(--title-color-dark);
   margin: 0 var(--mb-1);
   cursor: pointer;
 }
 .qualification__button:hover {
-  color: var(--tile-color-dark);
+  color: var(--title-color);
 }
 .qualification__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
 .qualification__active {
-  color: var(--title-color-dark);
+  color: var(--title-color);
+  box-shadow: 0px 1px 0px 0px var(--title-color);
 }
 
 .qualification__sections {
@@ -61,13 +62,15 @@
   height: 13px;
   background-color: var(--text-color);
   border-radius: 50%;
+  position: relative;
+  z-index: 10;
 }
 
 .qualification__line {
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: var(--title-color);
   transform: translate(6px, -7px);
 }
 /*=============== BREAKPOINTS ===============*/
@@ -102,3 +105,5 @@
     gap: 0.5rem;
   }
 }
+
+/* Edited: hover effects */

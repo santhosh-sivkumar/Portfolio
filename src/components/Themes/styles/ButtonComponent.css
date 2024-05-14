@@ -1,0 +1,16 @@
+.themes__form-inputbtn {
+  margin: 0.5rem 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--container-color);
+  background: var(--title-color);
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+}
+
+.themes__form-inputbtn:hover {
+  background-color: var(--container-color);
+  color: var(--title-color);
+}

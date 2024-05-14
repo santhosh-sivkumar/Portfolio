@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const [headerScroll, setHeaderScroll] = useState(false);
+  const headerRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector(".header");
+      const header = headerRef.current;
       const sections = document.querySelectorAll("section[id]");
+
       sections.forEach((section) => {
         const navHeight = header.offsetHeight;
         const sectionTop = section.offsetTop - navHeight;
@@ -23,16 +26,17 @@ const Header = () => {
       });
 
       if (window.scrollY > 20) {
-        header.classList.add("scroll-header");
+        setHeaderScroll(true);
       } else {
-        header.classList.remove("scroll-header");
+        setHeaderScroll(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 100);
+    window.addEventListener("scroll", debouncedHandleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", debouncedHandleScroll);
     };
   }, []);
 
@@ -42,7 +46,10 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header
+      className={`header ${headerScroll ? "scroll-header" : ""}`}
+      ref={headerRef}
+    >
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Santhosh
@@ -63,23 +70,12 @@ const Header = () => {
               { id: "portfolio", text: "Portfolio", icon: "scenery" },
               { id: "contact", text: "Contact", icon: "message" },
             ].map((item) => (
-              <li key={item.id} className="nav_item">
-                <a
-                  {...(item.scrollBackToHomeId && {
-                    id: item.scrollBackToHomeId,
-                  })}
-                  href={`#${item.id}`}
-                  onClick={() => handleNavClick(`#${item.id}`)}
-                  className={
-                    activeNav === `#${item.id}`
-                      ? "nav__link active-link"
-                      : "nav__link"
-                  }
-                >
-                  <i className={`uil uil-${item.icon} nav__icon`}></i>
-                  {item.text}
-                </a>
-              </li>
+              <NavItem
+                key={item.id}
+                item={item}
+                activeNav={activeNav}
+                handleNavClick={handleNavClick}
+              />
             ))}
           </ul>
 
@@ -96,6 +92,37 @@ const Header = () => {
       </nav>
     </header>
   );
+};
+
+const NavItem = ({ item, activeNav, handleNavClick }) => {
+  return (
+    <li className="nav_item">
+      <a
+        {...(item.scrollBackToHomeId && {
+          id: item.scrollBackToHomeId,
+        })}
+        href={`#${item.id}`}
+        onClick={() => handleNavClick(`#${item.id}`)}
+        className={
+          activeNav === `#${item.id}` ? "nav__link active-link" : "nav__link"
+        }
+      >
+        <i className={`uil uil-${item.icon} nav__icon`}></i>
+        {item.text}
+      </a>
+    </li>
+  );
+};
+
+// Function to debounce scroll event
+const debounce = (func, delay) => {
+  let timeoutId;
+  return function (...args) {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
 };
 
 export default Header;

@@ -92,14 +92,14 @@ const Contact = () => {
               placeholder="Enter your email"
             />
             <div className="contact__form-div contact__form-area">
-              <label htmlFor="" className="contact__form-tag">
+              <label htmlFor="project-input" className="contact__form-tag">
                 Project
               </label>
               <textarea
                 name="project"
                 cols="30"
                 rows="10"
-                id=""
+                id="project-input"
                 className="contact__form-input"
                 placeholder="Write your project"
               ></textarea>

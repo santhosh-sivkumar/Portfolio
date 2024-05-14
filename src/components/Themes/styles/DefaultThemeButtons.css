@@ -1,0 +1,68 @@
+/* default theme buttons */
+.themes_colors-container {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+}
+.themes_colors-button {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  position: relative;
+  border-color: transparent;
+  background: none;
+  border-width: 3px;
+  border-radius: 3px;
+  margin-bottom: var(--mb-0-5);
+}
+
+.themes_colors-button-clearThemes {
+  border-color: black;
+  border-width: 2px;
+}
+
+.themes_colors-button:hover {
+  border-color: var(--text-color);
+  border-width: 3.5px;
+}
+.themes_colors-button-active {
+  border-color: var(--text-color) !important;
+  border-width: 3.5px !important;
+}
+.themes_colors-button-top,
+.themes_colors-button-bottom {
+  height: 50%;
+  width: 100%;
+}
+/* Adjust border radius for .themes_colors-button-bottom when .themes_colors-button is hovered */
+.themes_colors-button:hover .themes_colors-button-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+/* Adjust border radius for .themes_colors-button-bottom when .themes_colors-button is hovered */
+.themes_colors-button:hover .themes_colors-button-bottom {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.themes_colors-button-top-active {
+  border-top-left-radius: 0 !important ;
+  border-top-right-radius: 0 !important;
+}
+.themes_colors-button-bottom-active {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.themes_colors-button-top {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.themes_colors-button-bottom {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

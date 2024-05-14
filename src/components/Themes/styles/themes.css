@@ -1,0 +1,87 @@
+.themes__button {
+  position: fixed;
+  top: 5.5rem;
+  right: 1%;
+  background-color: var(--title-color);
+  opacity: 0.8;
+  padding: 0.3rem 0.5rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.themes__icon {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  color: var(--container-color);
+}
+.themes__button:hover {
+  background-color: var(--title-color-dark);
+}
+.themes__button:hover .themes__icon {
+  color: var(--container-color);
+}
+
+.themes__model {
+  border-radius: 0.5rem;
+  position: fixed;
+  top: 5.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  right: 3.7rem;
+  z-index: var(--z-modal);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .themes__model,
+  .themes__button {
+    top: 0.5rem;
+  }
+}
+.themes__model-container {
+  width: 265px;
+  position: relative;
+  padding: 0.5rem 1.5rem 0.5rem;
+}
+.themes__model-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.themes__model-title {
+  font-size: 0.8rem;
+  user-select: none;
+}
+.themes__model-description {
+  font-size: var(--small-font-size);
+  padding: 0 3.5rem;
+  margin-bottom: var(--mb-2);
+}
+
+.active-model {
+  opacity: 1;
+  visibility: visible;
+}
+.theme-switcher {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.theme-switcher__button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #ccc; /* Background color for buttons */
+  color: #333; /* Text color for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-switcher__button:hover {
+  background-color: #aaa; /* Darker background color on hover */
+}

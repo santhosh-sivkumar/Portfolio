@@ -87,7 +87,10 @@ body {
   color: var(--text-color);
 }
 
-h1,
+h1 {
+  color: var(--text-color);
+  font-weight: var(--font-semi-bold);
+}
 h2,
 h3 {
   color: var(--title-color);
@@ -106,6 +109,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  border-style: solid;
 }
 
 img {
@@ -116,6 +120,7 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6.5rem 0 2rem;
+  transition: 1s;
 }
 
 .section__title {
@@ -215,4 +220,48 @@ img {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
+}
+
+/* test */
+
+:root {
+  --light-border-color: 2px solid rgba(0, 0, 0, 0.3);
+
+  --light-background-color: #fff;
+  --light-text-color: #333;
+
+  --dark-background-color: #333;
+  --dark-text-color: #fff;
+
+  --light-container-color: #fff;
+  --dark-container-color: #333;
+
+  --light-title-color: #333333;
+  --lighttitle-color-dark: #000000;
+
+  --dark-title-color: #fff;
+  --darktitle-color-dark: #fff;
+}
+
+[data-theme="light"] {
+  --body-color: var(--light-background-color);
+  --text-color: var(--light-text-color);
+  --container-color: var(--body-color);
+  /* Define other theme-specific variables */
+  --header-color: var(--body-color);
+  --title-color: var(--light-title-color);
+  --title-color-dark: var(--lighttitle-color-dark);
+  --border-color: var(--light-border-color);
+}
+
+[data-theme="dark"] {
+  --body-color: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+  --container-color: var(--dark-container-color);
+  /* Define other theme-specific variables */
+  --title-color: var(--dark-title-color);
+  --title-color-dark: var(--darktitle-color-dark);
+  --border-color: var(--light-border-color);
+
+  --header-color: var(--body-color);
 }

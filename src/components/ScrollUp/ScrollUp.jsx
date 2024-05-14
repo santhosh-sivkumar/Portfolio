@@ -27,6 +27,7 @@ const ScrollUp = () => {
 
   return (
     <a
+      title="scrollup"
       href="#home"
       className={`scrollup ${showScroll ? "show-scroll" : ""}`}
       onClick={scrollToTop}
