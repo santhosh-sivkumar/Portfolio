@@ -41,6 +41,6 @@
 /* For small devices */
 @media screen and (max-width: 350px) {
   .scrollup {
-    right: 1rem;
+    right: 1.2rem;
   }
 }
