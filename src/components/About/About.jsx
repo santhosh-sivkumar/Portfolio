@@ -17,9 +17,9 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            As a Frontend developer, I create web pages with UI / UX user
-            interface, I have years of experience and many clients are happy
-            with the projects carried out.
+            As a software engineer, I specialize in creating robust applications
+            and systems, leveraging years of experience and the latest
+            technologies for innovative solutions.
           </p>
 
           <a download="" href={CV} className="button button--flex">

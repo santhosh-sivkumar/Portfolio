@@ -18,30 +18,30 @@ const Services = () => {
         <ServiceItem
           iconClass="uil-web-grid"
           title="Product Designer"
-          description="First Service with more than 1.5 years of experience. Providing quality work to clients and companies."
+          description="Crafting innovative solutions for clients and companies, with a proven track record in design excellence."
           toggleState={toggleState}
           index={1}
-          modelListItems="I develop the user interface.|Web page development.|I create ux element interactions.|I position your company brand.|Design and mockups of products for companies."
+          modelListItems="I collaborate cross-functionally.|I prototype and refine.|I prioritize user-centricity."
           toggleTab={toggleTab}
         />
 
         <ServiceItem
           iconClass="uil-arrow"
           title="Ui/Ux Designer"
-          description="Second Service with more than 1.5 years of experience. Providing quality work to clients and companies."
+          description="Seasoned UI/UX designer offering quality solutions to clients and companies, with a proven track record."
           toggleState={toggleState}
           index={2}
-          modelListItems="I develop the user interface.|Web page development.|I create ux element interactions.|I position your company brand.|Design and mockups of products for companies."
+          modelListItems="I develop the user interface.|Web page development.|I create ux element interactions."
           toggleTab={toggleTab}
         />
 
         <ServiceItem
           iconClass="uil-edit"
           title="Visual Designer"
-          description="Third Service with more than 1.5 years of experience. Providing quality work to clients and companies."
+          description="Experienced visual designer offering quality design services to clients and companies, backed by years of proven expertise."
           toggleState={toggleState}
           index={3}
-          modelListItems="I develop the user interface.|Web page development.|I create ux element interactions.|I position your company brand.|Design and mockups of products for companies."
+          modelListItems="I develop visually stunning user interfaces.|I create cohesive brand experiences.|I collaborate closely with cross-functional teams.|I stay updated with industry trends.| Design and mockups of products for companies."
           toggleTab={toggleTab}
         />
       </div>

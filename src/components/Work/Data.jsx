@@ -10,30 +10,45 @@ export const projectsData = [
     image: Work1,
     title: "Web design",
     category: "web",
+    demolink: "https://github.com/santhosh-sivkumar/",
+    repositorylink:
+      "https://github.com/santhosh-sivkumar/portfolio-santhosh-sivakumar",
   },
   {
     id: 2,
     image: Work2,
     title: "App movil",
     category: "app",
+    demolink: "https://github.com/santhosh-sivkumar/",
+    repositorylink:
+      "https://github.com/santhosh-sivkumar/portfolio-santhosh-sivakumar",
   },
   {
     id: 3,
     image: Work3,
     title: "Brand design",
     category: "design",
+    demolink: "https://github.com/santhosh-sivkumar/",
+    repositorylink:
+      "https://github.com/santhosh-sivkumar/portfolio-santhosh-sivakumar",
   },
   {
     id: 4,
     image: Work4,
     title: "App movil",
     category: "app",
+    demolink: "https://github.com/santhosh-sivkumar/",
+    repositorylink:
+      "https://github.com/santhosh-sivkumar/portfolio-santhosh-sivakumar",
   },
   {
     id: 5,
     image: Work5,
     title: "Web design",
     category: "web",
+    demolink: "https://github.com/santhosh-sivkumar/",
+    repositorylink:
+      "https://github.com/santhosh-sivkumar/portfolio-santhosh-sivakumar",
   },
 ];
 

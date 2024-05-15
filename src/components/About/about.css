@@ -79,8 +79,14 @@
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 403px) {
   .about__info {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* For small devices */
+@media screen and (max-width: 266px) {
+  .about__subtitle {
+    font-size: 0.53em;
   }
 }

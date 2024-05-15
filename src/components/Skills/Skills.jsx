@@ -6,12 +6,12 @@ import SkillContent from "./SkillContent";
 const Skills = () => {
   const Group1 = [
     [
-      { name: "PHP", level: "Intermediate" },
-      { name: "Node Js", level: "Intermediate" },
-      { name: "Python", level: "Intermediate" },
+      { name: "Asp.Net", level: "Intermediate" },
+      { name: "MySQL", level: "Intermediate" },
+      { name: "Node Js", level: "Basic" },
     ],
     [
-      { name: "MySQL", level: "Intermediate" },
+      { name: "C#", level: "Advanced" },
       { name: "Microsoft SQL", level: "Intermediate" },
       { name: "Git", level: "Intermediate" },
     ],
@@ -24,8 +24,8 @@ const Skills = () => {
     ],
     [
       { name: "Bootstrap", level: "Intermediate" },
-      { name: "React", level: "Intermediate" },
-      { name: "Asp.Net", level: "Advanced" },
+      { name: "React", level: "Advanced" },
+      { name: "Tailwind", level: "Intermediate" },
     ],
   ];
   return (
