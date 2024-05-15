@@ -1,4 +1,4 @@
-![Portfolio](https://github.com/santhosh-sivkumar/portfolio/blob/main/src/assets/portfolio-preview.png?raw=true)
+![Portfolio](https://github.com/santhosh-sivkumar/portfolio/blob/main/src/assets/portfolio_preview.png?raw=true)
 
 # Portfolio
 
