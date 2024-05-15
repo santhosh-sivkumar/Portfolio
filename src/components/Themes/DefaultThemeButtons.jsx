@@ -7,17 +7,20 @@ function DefaultThemeButtons({
   applyTheme,
   setActiveTheme,
   handleDeleteCustomTheme,
+  handlehideThemesModel,
+  enableColors,
 }) {
   const handleClickEvent = useCallback(
-    (theme, index) => {
+    (theme, index, isCustomTheme) => {
       if (index === 0 && theme.name === "Delete Custom Themes") {
         handleDeleteCustomTheme();
       } else {
         applyTheme(theme.colors, index);
         setActiveTheme(index);
+        if (!isCustomTheme) handlehideThemesModel();
       }
     },
-    [applyTheme, setActiveTheme, handleDeleteCustomTheme]
+    [applyTheme, setActiveTheme, handleDeleteCustomTheme, handlehideThemesModel]
   );
 
   return (
@@ -30,13 +33,15 @@ function DefaultThemeButtons({
         const isDeleteTheme = index === 0 && name === "Delete Custom Themes";
         const headerBackground = colors.headerColor || colors.textColor;
         const background = colors.backgroundColor || colors.textColor;
-
+        const isCustomTheme = name.includes("Custom");
         return (
           <button
             title={name}
             type="button"
             key={index}
-            onClick={() => handleClickEvent({ name, colors }, index)}
+            onClick={() =>
+              handleClickEvent({ name, colors }, index, isCustomTheme)
+            }
             className={`themes_colors-button ${stylesClassName} ${
               isActive ? "themes_colors-button-active" : ""
             }`}

@@ -8,7 +8,7 @@ import ColorProperties from "./ColorProperties.jsx";
 import isEqual from "lodash/isEqual"; // Import isEqual function from lodash
 import ButtonComponent from "./ButtonComponent.jsx";
 
-function ColorPicker() {
+function ColorPicker({ handlehideThemesModel }) {
   let storedDefaultThemes = DefaultThemes.get();
   let getstoredCustomThemes = localStorage.getItem("storedCustomThemes");
   let storedCustomThemes;
@@ -239,6 +239,8 @@ function ColorPicker() {
       </div>
       <div className="themes__model-container">
         <DefaultThemeButtons
+          enableColors={enableColors}
+          handlehideThemesModel={handlehideThemesModel}
           storedDefaultThemes={storedDefaultThemes}
           activeTheme={activeThemeInDefaultThemes}
           applyTheme={applyDefaultTheme}
@@ -272,6 +274,8 @@ function ColorPicker() {
       {storedCustomThemes && enableColors && (
         <div className="themes__model-container">
           <DefaultThemeButtons
+            enableColors={enableColors}
+            handlehideThemesModel={handlehideThemesModel}
             storedDefaultThemes={storedCustomThemes}
             activeTheme={activeThemeInCustomThemes}
             applyTheme={applyCustomTheme}
@@ -294,6 +298,7 @@ function ColorPicker() {
       {!showAddNewThemeBtn && enableColors && (
         <div className="themes__model-container">
           <CustomThemeForm
+            handlehideThemesModel={handlehideThemesModel}
             colorProperties={ColorProperties}
             colors={colors}
             handleColorChange={handleColorChange}

@@ -8,6 +8,7 @@ function CustomThemeForm({
   handleColorChange,
   handleSubmit,
   handleFormVisibility,
+  handlehideThemesModel,
 }) {
   return (
     <>
@@ -27,12 +28,19 @@ function CustomThemeForm({
       <ButtonComponent
         buttonTitle="Save"
         buttonText="Save Theme"
-        onClick={handleSubmit}
+        onClick={() => {
+          handleSubmit();
+          setTimeout(() => {
+            handlehideThemesModel();
+          }, 300);
+        }}
       />
       <ButtonComponent
         buttonTitle="Cancel"
         buttonText="Cancel"
-        onClick={handleFormVisibility}
+        onClick={() => {
+          handleFormVisibility();
+        }}
       />
     </>
   );

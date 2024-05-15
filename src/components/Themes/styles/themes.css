@@ -23,17 +23,31 @@
 
 .themes__model {
   border-radius: 0.5rem;
-  position: fixed;
+  position: absolute;
   top: 5.5rem;
   background-color: rgba(0, 0, 0, 0.3);
-  right: 4rem;
+  right: 1rem;
   z-index: var(--z-modal);
   display: grid;
   justify-content: center;
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s;
+  transition: 0.3s; /* Transition property for left position */
+}
+.themes__model.active-model {
+  right: 4rem !important;
+  /* Position when the active-model class is applied */
+  /* animation: slideLeftToRight 0.5s ease; Animation for sliding left to right */
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @media screen and (max-width: 768px) {
   .themes__model,
