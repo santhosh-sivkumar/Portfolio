@@ -17,7 +17,7 @@
 }
 
 .nav__logo,
-.nav__toggle {
+.nav__open {
   color: var(--title-color-dark);
   font-weight: var(--font-medium);
 }
@@ -39,7 +39,7 @@
 
 .nav__icon,
 .nav__close,
-.nav__toggle {
+.nav__open {
   display: none;
 }
 
@@ -103,14 +103,18 @@
   .nav__close:hover {
     color: var(--title-color-dark);
   }
-  .nav__toggle {
+  .nav__open:hover {
+    color: var(--title-color-dark);
+  }
+  .nav__open {
+    color: var(--title-color);
     font-size: 1.1rem;
     cursor: pointer;
   }
 
   .nav__icon,
   .nav__close,
-  .nav__toggle {
+  .nav__open {
     display: block;
   }
 }
