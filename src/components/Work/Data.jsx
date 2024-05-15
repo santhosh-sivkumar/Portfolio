@@ -1,8 +1,8 @@
-import TicTacToe from "../../assets/Tic-Tac-Toe-preview.png";
-import Work2 from "../../assets/work2.jpg";
-import Work3 from "../../assets/work3.jpg";
-import Work4 from "../../assets/work4.jpg";
-import Work5 from "../../assets/work5.jpg";
+import TicTacToe from "../../assets/project-images/Tic-Tac-Toe-preview.png";
+import Work2 from "../../assets/project-images/work2.jpg";
+import Work3 from "../../assets/project-images/work3.jpg";
+import Work4 from "../../assets/project-images/work4.jpg";
+import Work5 from "../../assets/project-images/work5.jpg";
 
 export const projectsData = [
   {
