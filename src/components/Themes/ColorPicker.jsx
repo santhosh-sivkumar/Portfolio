@@ -17,7 +17,6 @@ function ColorPicker() {
   }
 
   const [showAddNewThemeBtn, setShowAddNewThemeBtn] = useState(true);
-
   const [colors, setColors] = useState(() => {
     const storedColors = {};
     ColorProperties.forEach((property) => {
