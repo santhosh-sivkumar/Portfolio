@@ -1,7 +1,7 @@
 .themes__button {
   position: fixed;
   top: 5.5rem;
-  right: 1%;
+  right: 1rem;
   background-color: var(--title-color);
   opacity: 0.8;
   padding: 0.3rem 0.5rem;
@@ -26,7 +26,7 @@
   position: fixed;
   top: 5.5rem;
   background-color: rgba(0, 0, 0, 0.3);
-  right: 3.7rem;
+  right: 4rem;
   z-index: var(--z-modal);
   display: grid;
   justify-content: center;
