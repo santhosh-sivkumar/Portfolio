@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-const navigationItems = ["About", "Projects", "Services"];
+const navigationItems = ["About", "Portfolio", "Services"];
 
 const socialLinks = [
   {
