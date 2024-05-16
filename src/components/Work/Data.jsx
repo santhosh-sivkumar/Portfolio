@@ -17,7 +17,7 @@ export const projectsData = [
   {
     id: 2,
     image: BackgroundColorChanger_Preview,
-    title: "Background Color Chnager",
+    title: "Background Color Changer",
     category: "design",
     demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
   },
