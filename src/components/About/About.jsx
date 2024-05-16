@@ -31,7 +31,7 @@ const About = () => {
             technologies for innovative solutions.
           </p>
           <a
-            download=""
+            download="Santhosh's Resume.pdf"
             href={CV}
             className="button button--flex"
             onClick={handleDownload}
