@@ -16,7 +16,7 @@ const ContactFormInput = ({ label, type, name, placeholder }) => {
         placeholder={placeholder}
         className="contact__form-input"
         autoComplete={name}
-        required=""
+        required
       />
     </div>
   );

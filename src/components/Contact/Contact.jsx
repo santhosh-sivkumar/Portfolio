@@ -102,6 +102,7 @@ const Contact = () => {
                 id="project-input"
                 className="contact__form-input"
                 placeholder="Write your project"
+                required
               ></textarea>
             </div>
             {positiveMessage && (
