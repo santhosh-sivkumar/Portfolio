@@ -10,7 +10,7 @@ export const projectsData = [
   {
     id: 1,
     image: TicTacToe_Preview,
-    title: "Tic Tac Toe game",
+    title: "Tic-Tac-Toe Game",
     category: "app",
     demolink: "https://santhosh-sivkumar-tic-tac-toe.netlify.app/",
   },
@@ -24,7 +24,7 @@ export const projectsData = [
   {
     id: 3,
     image: TodoList_Preview,
-    title: "TodoList",
+    title: "Todo List",
     category: "web",
     demolink: "https://santhosh-sivkumar-todo-list.netlify.app/",
   },
@@ -52,7 +52,7 @@ export const projectsData = [
   {
     id: 7,
     image: DocsApp_Preview,
-    title: "Docs App",
+    title: "Notes App",
     category: "web",
     demolink: "https://santhosh-sivkumar-docs-app.netlify.app/",
   },
