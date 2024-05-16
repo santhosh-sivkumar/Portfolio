@@ -2,7 +2,7 @@
 
 # Portfolio
 
-[Portfolio](https://santhosh-sivkumar.github.io/portfolio/) site: A showcase of my web development skills featuring a diverse range of projects. Explore my portfolio to discover innovative solutions, sleek user interfaces, and robust backend systems. From dynamic web applications to elegant design solutions, each project reflects my dedication to excellence in web development. Join me on a journey through the digital landscape where creativity knows no bounds.
+[Portfolio](https://santhosh-sivkumar.netlify.app/) site: A showcase of my web development skills featuring a diverse range of projects. Explore my portfolio to discover innovative solutions, sleek user interfaces, and robust backend systems. From dynamic web applications to elegant design solutions, each project reflects my dedication to excellence in web development. Join me on a journey through the digital landscape where creativity knows no bounds.
 
 ## Getting Started with Create React App
 
