@@ -5,7 +5,7 @@ import Calculator_Preview from "../../assets/project-images/Calculator_Preview.p
 import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
 import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
 
-//import Work5 from "../../assets/project-images/QuizApp_Preview.png";
+import Work2 from "../../assets/project-images/work2.jpg";
 
 export const projectsData = [
   {
@@ -46,7 +46,14 @@ export const projectsData = [
   {
     id: 6,
     image: QuizApp_Preview,
-    title: "QuizApp Preview",
+    title: "Quiz App",
+    category: "web",
+    demolink: "https://santhosh-sivkumar-quiz-app.netlify.app/",
+  },
+  {
+    id: 7,
+    image: Work2,
+    title: "Docs App",
     category: "web",
     demolink: "https://santhosh-sivkumar-docs-app.netlify.app/",
   },
