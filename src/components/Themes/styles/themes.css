@@ -23,7 +23,7 @@
 
 .themes__model {
   border-radius: 0.5rem;
-  position: absolute;
+  position: fixed;
   top: 5.5rem;
   background-color: rgba(0, 0, 0, 0.3);
   right: 1rem;

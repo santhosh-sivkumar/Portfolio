@@ -10,7 +10,7 @@ export const projectsData = [
     image: TicTacToe,
     title: "Tic-Tac-Toe game",
     category: "app",
-    demolink: "https://santhosh-sivkumar.github.io/tic-tac-toe/",
+    demolink: "https://santhosh-sivkumar-tic-tac-toe.netlify.app/",
   },
   {
     id: 2,
