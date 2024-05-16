@@ -66,7 +66,7 @@ const Header = () => {
               },
               { id: "about", text: "About", icon: "user" },
               { id: "skills", text: "Skills", icon: "file-alt" },
-              { id: "services", text: "Services", icon: "briefcase-alt" },
+              // { id: "services", text: "Services", icon: "briefcase-alt" },
               { id: "portfolio", text: "Portfolio", icon: "scenery" },
               { id: "contact", text: "Contact", icon: "message" },
             ].map((item) => (

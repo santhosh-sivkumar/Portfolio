@@ -1,44 +1,54 @@
-import TicTacToe from "../../assets/project-images/Tic-Tac-Toe-preview.png";
-import Work2 from "../../assets/project-images/work2.jpg";
-import Work3 from "../../assets/project-images/work3.jpg";
-import Work4 from "../../assets/project-images/work4.jpg";
-import Work5 from "../../assets/project-images/work5.jpg";
+import TicTacToe_Preview from "../../assets/project-images/TicTacToe_Preview.png";
+import BackgroundColorChanger_Preview from "../../assets/project-images/BackgroundColorChanger_Preview.png";
+import TodoList_Preview from "../../assets/project-images/TodoList_Preview.png";
+import Calculator_Preview from "../../assets/project-images/Calculator_Preview.png";
+import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
+import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
+
+//import Work5 from "../../assets/project-images/QuizApp_Preview.png";
 
 export const projectsData = [
   {
     id: 1,
-    image: TicTacToe,
-    title: "Tic-Tac-Toe game",
+    image: TicTacToe_Preview,
+    title: "Tic Tac Toe game",
     category: "app",
     demolink: "https://santhosh-sivkumar-tic-tac-toe.netlify.app/",
   },
   {
     id: 2,
-    image: Work2,
-    title: "App movil",
-    category: "app",
-    demolink: "https://github.com/santhosh-sivkumar/",
+    image: BackgroundColorChanger_Preview,
+    title: "Background Color Chnager",
+    category: "design",
+    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
   },
   {
     id: 3,
-    image: Work3,
-    title: "Brand design",
-    category: "design",
-    demolink: "https://github.com/santhosh-sivkumar/",
+    image: TodoList_Preview,
+    title: "TodoList",
+    category: "web",
+    demolink: "https://santhosh-sivkumar-todo-list.netlify.app/",
   },
   {
     id: 4,
-    image: Work4,
-    title: "App movil",
+    image: Calculator_Preview,
+    title: "Calculator",
     category: "app",
-    demolink: "https://github.com/santhosh-sivkumar/",
+    demolink: "https://santhosh-sivkumar-calculator.netlify.app/",
   },
   {
     id: 5,
-    image: Work5,
-    title: "Web design",
+    image: Hangman_Preview,
+    title: "Hangman Game",
+    category: "app",
+    demolink: "https://santhosh-sivkumar-Hangman.netlify.app/",
+  },
+  {
+    id: 6,
+    image: QuizApp_Preview,
+    title: "QuizApp Preview",
     category: "web",
-    demolink: "https://github.com/santhosh-sivkumar/",
+    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
   },
 ];
 
