@@ -4,8 +4,7 @@ import TodoList_Preview from "../../assets/project-images/TodoList_Preview.png";
 import Calculator_Preview from "../../assets/project-images/Calculator_Preview.png";
 import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
 import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
-
-import Work2 from "../../assets/project-images/work2.jpg";
+import DocsApp_Preview from "../../assets/project-images/DocsApp_Preview.png";
 
 export const projectsData = [
   {
@@ -41,7 +40,7 @@ export const projectsData = [
     image: Hangman_Preview,
     title: "Hangman Game",
     category: "app",
-    demolink: "https://santhosh-sivkumar-Hangman.netlify.app/",
+    demolink: "https://santhosh-sivkumar-hangman-game.netlify.app/",
   },
   {
     id: 6,
@@ -52,7 +51,7 @@ export const projectsData = [
   },
   {
     id: 7,
-    image: Work2,
+    image: DocsApp_Preview,
     title: "Docs App",
     category: "web",
     demolink: "https://santhosh-sivkumar-docs-app.netlify.app/",

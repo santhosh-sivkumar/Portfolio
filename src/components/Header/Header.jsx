@@ -1,6 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 
+const navItems = [
+  { id: "home", text: "Home", icon: "estate" },
+  { id: "about", text: "About", icon: "user" },
+  { id: "skills", text: "Skills", icon: "file-alt" },
+  // { id: "services", text: "Services", icon: "briefcase-alt" },
+  { id: "portfolio", text: "Portfolio", icon: "scenery" },
+  { id: "contact", text: "Contact", icon: "message" },
+];
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
@@ -57,19 +65,7 @@ const Header = () => {
 
         <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
-            {[
-              {
-                scrollBackToHomeId: "homeScrolledUp",
-                id: "home",
-                text: "Home",
-                icon: "estate",
-              },
-              { id: "about", text: "About", icon: "user" },
-              { id: "skills", text: "Skills", icon: "file-alt" },
-              // { id: "services", text: "Services", icon: "briefcase-alt" },
-              { id: "portfolio", text: "Portfolio", icon: "scenery" },
-              { id: "contact", text: "Contact", icon: "message" },
-            ].map((item) => (
+            {navItems.map((item) => (
               <NavItem
                 key={item.id}
                 item={item}
