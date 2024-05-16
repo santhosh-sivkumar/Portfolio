@@ -48,7 +48,7 @@ export const projectsData = [
     image: QuizApp_Preview,
     title: "QuizApp Preview",
     category: "web",
-    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
+    demolink: "https://santhosh-sivkumar-docs-app.netlify.app/",
   },
 ];
 
