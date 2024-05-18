@@ -1,4 +1,6 @@
 import "./App.css";
+import { useState, useEffect } from "react";
+
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
@@ -10,23 +12,45 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Themes from "./components/Themes/Themes";
+import BarLoader from "react-spinners/BarLoader";
+
 function App() {
+  let [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  });
   return (
     <>
-      <Header />
+      {loading ? (
+        <div className="site_body">
+          <BarLoader
+            className="loader"
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <>
+          <Header />
 
-      <main className="main">
-        <Home />
-        <Themes />
-        <About />
-        <Skills />
-        {/* <Services /> */}
-        <Qualification />
-        <Work />
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollUp />
+          <main className="main">
+            <Home />
+            <Themes />
+            <About />
+            <Skills />
+            {/* <Services /> */}
+            <Qualification />
+            <Work />
+            <Contact />
+          </main>
+          <Footer />
+          <ScrollUp />
+        </>
+      )}
     </>
   );
 }

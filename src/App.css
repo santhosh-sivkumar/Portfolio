@@ -267,3 +267,13 @@ img {
 
   --header-color: var(--body-color);
 }
+.loader {
+  background-color: red !important;
+}
+.site_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
