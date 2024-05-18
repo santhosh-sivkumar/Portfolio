@@ -22,6 +22,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
+    // eslint-disable-next-line
   }, []);
   return (
     <>
