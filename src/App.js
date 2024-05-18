@@ -19,38 +19,41 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 3000);
   });
   return (
     <>
-      {loading ? (
-        <div className="site_body">
-          <BarLoader
-            className="loader"
-            loading={loading}
-            size={50}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-        </div>
-      ) : (
-        <>
-          <Header />
+      <div
+        className="site_body"
+        style={{
+          visibility: loading ? "visible" : "hidden",
+          display: !loading ? "none" : "flex",
+        }}
+      >
+        <BarLoader
+          className="loader"
+          loading={loading}
+          size={50}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
+      <div style={{ visibility: !loading ? "visible" : "hidden" }}>
+        <Header />
 
-          <main className="main">
-            <Home />
-            <Themes />
-            <About />
-            <Skills />
-            {/* <Services /> */}
-            <Qualification />
-            <Work />
-            <Contact />
-          </main>
-          <Footer />
-          <ScrollUp />
-        </>
-      )}
+        <main className="main">
+          <Home />
+          <Themes />
+          <About />
+          <Skills />
+          {/* <Services /> */}
+          <Qualification />
+          <Work />
+          <Contact />
+        </main>
+        <Footer />
+        <ScrollUp />
+      </div>
     </>
   );
 }
