@@ -32,4 +32,18 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
+  <script>
+    //  document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.key === "F12" || // F12
+        (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl+Shift+I
+        (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl+Shift+J
+        (event.ctrlKey && event.key === "U") // Ctrl+U
+      ) {
+        event.preventDefault();
+      }
+    });
+  </script>
 </html>
