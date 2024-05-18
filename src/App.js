@@ -17,43 +17,43 @@ import BarLoader from "react-spinners/BarLoader";
 function App() {
   let [loading, setLoading] = useState(true);
   useEffect(() => {
+    console.log("loading : " + loading);
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
-  });
+    }, 2000);
+  }, []);
   return (
     <>
-      <div
-        className="site_body"
-        style={{
-          visibility: loading ? "visible" : "hidden",
-          display: !loading ? "none" : "flex",
-        }}
-      >
-        <BarLoader
-          className="loader"
-          loading={loading}
-          size={50}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
-      <div style={{ visibility: !loading ? "visible" : "hidden" }}>
-        <Header />
+      {loading && (
+        <div className="site_body">
+          <BarLoader
+            className="loader"
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      )}
+      {!loading && (
+        <>
+          <Header />
 
-        <main className="main">
-          <Home />
-          <Themes />
-          <About />
-          <Skills />
-          {/* <Services /> */}
-          <Qualification />
-          <Work />
-          <Contact />
-        </main>
-        <Footer />
-        <ScrollUp />
-      </div>
+          <main className="main">
+            <Home />
+            <Themes />
+            <About />
+            <Skills />
+            {/* <Services /> */}
+            <Qualification />
+            <Work />
+            <Contact />
+          </main>
+          <Footer />
+          <ScrollUp />
+        </>
+      )}
     </>
   );
 }
