@@ -267,7 +267,9 @@ img {
 
   --header-color: var(--body-color);
 }
-
+.loader {
+  background-color: red !important;
+}
 .site_body {
   display: flex;
   justify-content: center;
