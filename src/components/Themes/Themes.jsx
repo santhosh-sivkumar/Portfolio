@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles/themes.css";
 import ColorPicker from "./ColorPicker";
 import ToggleSwitch from "./ToggleSwitch";
 
 const Themes = () => {
-  const modalRef = useRef();
   const [toggleState, setToggleState] = useState(false);
   const [theme, setTheme] = useState(
     () => localStorage.getItem("theme") || "light"
