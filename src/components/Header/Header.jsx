@@ -14,6 +14,21 @@ const Header = () => {
   const [activeNav, setActiveNav] = useState("#home");
   const [headerScroll, setHeaderScroll] = useState(false);
   const headerRef = useRef(null);
+  const navMenuRef = useRef();
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navMenuRef.current && !navMenuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +78,10 @@ const Header = () => {
           Santhosh
         </a>
 
-        <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          ref={navMenuRef}
+          className={toggle ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             {navItems.map((item) => (
               <NavItem
