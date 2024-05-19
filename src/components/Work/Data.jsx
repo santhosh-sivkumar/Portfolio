@@ -4,7 +4,7 @@ import TodoList_Preview from "../../assets/project-images/TodoList_Preview.png";
 import Calculator_Preview from "../../assets/project-images/Calculator_Preview.png";
 import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
 import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
-import DocsApp_Preview from "../../assets/project-images/DocsApp_Preview.png";
+import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
 
 export const projectsData = [
   {
@@ -16,11 +16,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: BackgroundColorChanger_Preview,
-    title: "Background Color Changer",
-    category: "design",
-    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
+    image: NotesApp_Preview,
+    title: "Notes App",
+    category: "web",
+    demolink: "https://santhosh-sivkumar-notes-app.netlify.app/",
   },
+
   {
     id: 3,
     image: TodoList_Preview,
@@ -44,17 +45,17 @@ export const projectsData = [
   },
   {
     id: 6,
+    image: BackgroundColorChanger_Preview,
+    title: "Background Color Changer",
+    category: "design",
+    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
+  },
+  {
+    id: 7,
     image: QuizApp_Preview,
     title: "Quiz App",
     category: "web",
     demolink: "https://santhosh-sivkumar-quiz-app.netlify.app/",
-  },
-  {
-    id: 7,
-    image: DocsApp_Preview,
-    title: "Notes App",
-    category: "web",
-    demolink: "https://santhosh-sivkumar-docs-app.netlify.app/",
   },
 ];
 
