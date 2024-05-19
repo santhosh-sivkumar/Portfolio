@@ -6,8 +6,7 @@ import ContactFormInput from "./ContactFormInput";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [positiveMessage, setPositiveMessage] = useState("");
-  const [negativeMessage, setNegativeMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,29 +20,20 @@ const Contact = () => {
       .then(
         () => {
           console.log("Email sent successfully");
-          setPositiveMessage("Successfully Sent");
           e.target.reset();
+          setSubmitted(true);
           setTimeout(() => {
-            setPositiveMessage("");
+            setSubmitted(false);
           }, 3000);
         },
         (error) => {
           console.error("Email sending failed:", error);
-          setNegativeMessage(
-            "Failed to send your message. Please try again later."
-          );
-          setTimeout(() => {
-            setPositiveMessage("");
-          }, 3000);
+          setSubmitted(false);
         }
       )
       .finally(() => {
-        // Reset the submitting state and hide the spinner
         setIsSubmitting(false);
       });
-
-    // Set submitting state to true to show the spinner or "Sending..." text
-    setIsSubmitting(true);
   };
 
   return (
@@ -105,17 +95,13 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            {positiveMessage && (
-              <p className="response positive">{positiveMessage}</p>
-            )}
-            {negativeMessage && (
-              <p className="response negative">{negativeMessage}</p>
-            )}
             <button type="submit" className="button button--flex">
-              {isSubmitting ? "Sending..." : "Send Message"}
-              {isSubmitting ? (
-                ""
-              ) : (
+              {isSubmitting
+                ? "Sending..."
+                : submitted
+                ? "Sent"
+                : "Send Message"}
+              {!isSubmitting && !submitted && (
                 <>
                   <svg
                     className="button__icon"
