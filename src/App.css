@@ -267,14 +267,11 @@ img {
 
   --header-color: var(--body-color);
 }
-.loader {
-  background-color: red !important;
-}
+
 .site_body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
-  visibility: visible;
 }
