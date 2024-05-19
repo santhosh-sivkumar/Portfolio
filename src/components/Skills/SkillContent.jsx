@@ -9,6 +9,8 @@ const SkillContent = ({ skillsTitle, skillsGroup }) => {
             {group.map((skill, index) => (
               <div className="skills__data" key={index}>
                 <i className="bx bx-badge-check"></i>
+                {/* <i className={`${skill.icon}`}></i> */}
+
                 <div>
                   <h3 className="skills__name">{skill.name}</h3>
                   <span className="skills__level">{skill.level}</span>

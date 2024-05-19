@@ -17,7 +17,6 @@ import HashLoader from "react-spinners/HashLoader";
 function App() {
   let [loading, setLoading] = useState(true);
   useEffect(() => {
-    console.log("loading : " + loading);
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
