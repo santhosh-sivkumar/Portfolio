@@ -24,9 +24,11 @@ const Header = () => {
     };
 
     document.addEventListener("mouseover", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside);
 
     return () => {
       document.removeEventListener("mouseover", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
     };
   }, []);
 
