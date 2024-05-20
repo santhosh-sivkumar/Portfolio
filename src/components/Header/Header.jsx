@@ -23,10 +23,10 @@ const Header = () => {
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mouseover", handleClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mouseover", handleClickOutside);
     };
   }, []);
 
