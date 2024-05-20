@@ -12,7 +12,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Themes from "./components/Themes/Themes";
-import HashLoader from "react-spinners/HashLoader";
+import BarLoader from "react-spinners/BarLoader";
 
 function App() {
   let [loading, setLoading] = useState(true);
@@ -27,7 +27,8 @@ function App() {
     <>
       {loading && (
         <div className="site_body">
-          <HashLoader
+          Santhosh Sivakumar Portfolio
+          <BarLoader
             color="red"
             className="loader"
             loading={loading}

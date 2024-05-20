@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/Santhosh.jpg";
 import Info from "./Info";
-import CV from "../../assets/Santhosh_Sivakumar_Resume.pdf";
+import CV from "../../assets/Santhosh_Resume.pdf";
 
 const About = () => {
   const [downloading, setDownloading] = useState(false);

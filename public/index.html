@@ -1,49 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Santhosh Sivakumar" />
-    <!-- BOXICONS -->
-    <meta name="keywords" content="Santhosh Sivakumar, Frontend App" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
 
-    <!-- UNICONS -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Santhosh Sivakumar" />
+  <!-- BOXICONS -->
+  <meta name="keywords" content="Santhosh Sivakumar, Frontend App" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+  <!-- UNICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <title>Santhosh Sivakumar</title>
-  </head>
-  <body oncontextmenu="return false">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
-  <script>
-    //  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  <title>Santhosh Sivakumar</title>
+</head>
 
-    document.addEventListener("keydown", (event) => {
-      if (
-        event.key === "F12" || // F12
-        (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl+Shift+I
-        (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl+Shift+J
-        (event.ctrlKey && event.key === "U") // Ctrl+U
-      ) {
-        event.preventDefault();
-      }
-    });
-  </script>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+<script>
+  //  document.addEventListener("contextmenu", (event) => eveFnt.preventDefault());
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "F12" || // F12
+      (event.ctrlKey && event.shiftKey && event.key === "I") || // Ctrl+Shift+I
+      (event.ctrlKey && event.shiftKey && event.key === "J") || // Ctrl+Shift+J
+      (event.ctrlKey && event.key === "U") // Ctrl+U
+    ) {
+      event.preventDefault();
+    }
+  });
+</script>
+
 </html>

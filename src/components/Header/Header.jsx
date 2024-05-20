@@ -75,7 +75,9 @@ const Header = () => {
     >
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
+          <p className="nav__logo-icon">{`</`}</p>
           Santhosh
+          <p className="nav__logo-icon">{`>`}</p>
         </a>
 
         <div

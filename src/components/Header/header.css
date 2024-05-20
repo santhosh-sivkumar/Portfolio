@@ -128,3 +128,12 @@
     column-gap: 0;
   }
 }
+.nav__logo {
+  display: flex;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+}
+.nav__logo-icon {
+  color: var(--title-color);
+}
