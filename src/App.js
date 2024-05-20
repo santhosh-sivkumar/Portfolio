@@ -27,7 +27,7 @@ function App() {
     <>
       {loading && (
         <div className="site_body">
-          Santhosh Sivakumar Portfolio
+          Santhosh S Portfolio
           <BarLoader
             color="red"
             className="loader"
