@@ -27,9 +27,7 @@ function App() {
     <>
       {loading && (
         <div className="loader__body">
-          <div className="loader__container">
-            <p className="loader__title">Santhosh's Portfolio</p>
-          </div>
+          <p className="loader__title">Santhosh's Portfolio</p>
         </div>
       )}
       {!loading && (

@@ -277,11 +277,10 @@ img {
   width: 100%;
   flex-direction: column;
 } */
-.loader__body {
-  height: 100vh;
+html {
   background-color: #fff;
 }
-.loader__container {
+.loader__body {
   margin: 0;
   padding: 0;
   display: flex;
