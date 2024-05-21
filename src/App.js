@@ -12,7 +12,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Themes from "./components/Themes/Themes";
-// import BarLoader from "react-spinners/BarLoader";
+import BarLoader from "react-spinners/BarLoader";
 
 function App() {
   let [loading, setLoading] = useState(true);
@@ -20,14 +20,22 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
     // eslint-disable-next-line
   }, []);
   return (
     <>
       {loading && (
-        <div className="loader__body">
-          <p className="loader__title">Santhosh's Portfolio</p>
+        <div className="site_body">
+          Santhosh's Portfolio
+          <BarLoader
+            color="red"
+            className="loader"
+            loading={loading}
+            size={50}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </div>
       )}
       {!loading && (

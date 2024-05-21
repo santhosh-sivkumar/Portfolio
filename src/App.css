@@ -268,51 +268,13 @@ img {
   --header-color: var(--body-color);
 }
 
-/* .site_body {
+.site_body {
   display: flex;
   row-gap: 1rem;
+  position: fixed;
   justify-content: center;
   align-items: center;
   height: 90vh;
   width: 100%;
   flex-direction: column;
-} */
-html {
-  background-color: #000;
-}
-.loader__body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  background-color: #000;
-}
-
-.loader__title {
-  position: relative;
-  font-family: sans-serif;
-  font-size: 2em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #000, #ff0000, #000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animate 3s linear infinite;
-  background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-}
-@media screen and (max-width: 600px) {
-  .loader__title {
-    font-size: 1.3rem;
-  }
-}
-@keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
 }
