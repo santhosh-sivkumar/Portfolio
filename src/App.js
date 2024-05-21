@@ -13,7 +13,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Themes from "./components/Themes/Themes";
-import BarLoader from "react-spinners/BarLoader";
+// import BarLoader from "react-spinners/BarLoader";
 
 function App() {
   let [loading, setLoading] = useState(true);
