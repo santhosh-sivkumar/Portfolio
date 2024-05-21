@@ -289,11 +289,7 @@ html {
   height: 90vh;
   background-color: #fff;
 }
-@media screen and (max-width: 600px) {
-  .loader__title {
-    font-size: 1.5rem;
-  }
-}
+
 .loader__title {
   position: relative;
   font-family: sans-serif;
@@ -307,7 +303,11 @@ html {
   background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
-
+@media screen and (max-width: 600px) {
+  .loader__title {
+    font-size: 1.3rem;
+  }
+}
 @keyframes animate {
   0% {
     background-position: -500%;
