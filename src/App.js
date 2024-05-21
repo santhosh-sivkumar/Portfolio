@@ -1,4 +1,5 @@
 import "./App.css";
+import "./AdditionalStyles.css";
 import { useState, useEffect } from "react";
 
 import About from "./components/About/About";
@@ -20,22 +21,19 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 5000);
     // eslint-disable-next-line
   }, []);
   return (
     <>
       {loading && (
         <div className="site_body">
-          Santhosh S Portfolio
-          <BarLoader
-            color="red"
-            className="loader"
-            loading={loading}
-            size={50}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
+          <div className="dropping-texts">
+            <div>Developers</div>
+            <div>Designers</div>
+            <div>Coders</div>
+            <div>WELCOME !</div>
+          </div>
         </div>
       )}
       {!loading && (
