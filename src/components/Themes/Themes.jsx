@@ -51,7 +51,7 @@ const Themes = () => {
               }
               checked={theme === "dark"}
               onChange={handleThemeChange}
-              icons={["bx bxs-sun ", "bx bxs-moon "]}
+              icons={["bx bxs-moon ", "bx bxs-sun "]}
             />
           </div>
         </div>
