@@ -5,6 +5,7 @@ import Calculator_Preview from "../../assets/project-images/Calculator_Preview.p
 import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
 import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
 import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
+import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Preview.png";
 
 export const projectsData = [
   {
@@ -12,14 +13,14 @@ export const projectsData = [
     image: TicTacToe_Preview,
     title: "Tic-Tac-Toe Game",
     category: "app",
-    demolink: "https://santhosh-sivkumar-tic-tac-toe.netlify.app/",
+    demolink: "https://sansiv-tic-tac-toe.netlify.app/",
   },
   {
     id: 2,
     image: NotesApp_Preview,
     title: "Notes App",
     category: "web",
-    demolink: "https://santhosh-sivkumar-notes-app.netlify.app/",
+    demolink: "https://sansiv-notes-app.netlify.app/",
   },
 
   {
@@ -27,35 +28,42 @@ export const projectsData = [
     image: TodoList_Preview,
     title: "Todo List",
     category: "web",
-    demolink: "https://santhosh-sivkumar-todo-list.netlify.app/",
+    demolink: "https://sansiv-todo-list.netlify.app/",
   },
   {
     id: 4,
     image: Calculator_Preview,
     title: "Calculator",
     category: "app",
-    demolink: "https://santhosh-sivkumar-calculator.netlify.app/",
+    demolink: "https://sansiv-calculator.netlify.app/",
   },
   {
     id: 5,
     image: Hangman_Preview,
     title: "Hangman Game",
     category: "app",
-    demolink: "https://santhosh-sivkumar-hangman-game.netlify.app/",
+    demolink: "https://sansiv-hangman-game.netlify.app/",
   },
   {
     id: 6,
     image: BackgroundColorChanger_Preview,
     title: "Background Color Changer",
     category: "design",
-    demolink: "https://santhosh-sivkumar-bg-color-changer.netlify.app/",
+    demolink: "https://sansiv-bg-color-changer.netlify.app/",
   },
   {
     id: 7,
     image: QuizApp_Preview,
     title: "Quiz App",
     category: "web",
-    demolink: "https://santhosh-sivkumar-quiz-app.netlify.app/",
+    demolink: "https://sansiv-quiz-app.netlify.app/",
+  },
+  {
+    id: 8,
+    image: YoutubeClone_Preview,
+    title: "Youtube Clone",
+    category: "web",
+    demolink: "https://sansiv-youtube-clone.netlify.app/",
   },
 ];
 
