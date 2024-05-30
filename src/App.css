@@ -291,6 +291,7 @@ html {
 }
 
 .loader__title {
+  top: -3%;
   position: relative;
   font-family: sans-serif;
   font-size: 2em;
