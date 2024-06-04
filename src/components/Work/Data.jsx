@@ -61,7 +61,7 @@ export const projectsData = [
   {
     id: 8,
     image: YoutubeClone_Preview,
-    title: "Youtube Clone",
+    title: "Youtube Clone with YouTube Studio",
     category: "web",
     demolink: "https://sansiv-youtube-clone.netlify.app/",
   },
