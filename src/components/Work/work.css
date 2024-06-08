@@ -49,6 +49,12 @@
   align-items: center;
   column-gap: 0.25rem;
 }
+.work__button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+}
 
 .work__button-icon {
   font-size: 1rem;

@@ -48,7 +48,7 @@ const Footer = () => {
               href={link.href}
               className="footer__social-link"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <i className={link.iconClass}></i>
             </a>

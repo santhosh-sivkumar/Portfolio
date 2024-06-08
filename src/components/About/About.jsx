@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/Santhosh.jpg";
 import Info from "./Info";
-import CV from "../../assets/Santhosh_Resume.pdf";
+import RESUME from "../../assets/santhosh-resume.pdf";
 
 const About = () => {
   const [downloading, setDownloading] = useState(false);
@@ -20,7 +21,13 @@ const About = () => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img
+          src={AboutImg}
+          className="about__img"
+          alt="Santhosh"
+          loading="lazy"
+          title="Santhosh"
+        />
 
         <div className="about__data">
           <Info />
@@ -31,12 +38,12 @@ const About = () => {
             technologies for innovative solutions.
           </p>
           <a
-            download="Santhosh's Resume.pdf"
-            href={CV}
+            download="santhosh-resume.pdf"
+            href={RESUME}
             className="button button--flex"
             onClick={handleDownload}
           >
-            {downloading ? "Downloading..." : "Download CV"}
+            {downloading ? "Downloading..." : "Download Resume"}
           </a>
         </div>
       </div>

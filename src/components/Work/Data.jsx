@@ -9,18 +9,20 @@ import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Previ
 
 export const projectsData = [
   {
-    id: 1,
+    id: 5,
     image: TicTacToe_Preview,
     title: "Tic-Tac-Toe Game",
     category: "app",
     demolink: "https://sansiv-tic-tac-toe.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Tic-Tac-Toe",
   },
   {
-    id: 2,
+    id: 7,
     image: NotesApp_Preview,
     title: "Notes App",
     category: "web",
     demolink: "https://sansiv-notes-app.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Notes-App",
   },
 
   {
@@ -29,6 +31,7 @@ export const projectsData = [
     title: "Todo List",
     category: "web",
     demolink: "https://sansiv-todo-list.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Todo-List",
   },
   {
     id: 4,
@@ -36,34 +39,39 @@ export const projectsData = [
     title: "Calculator",
     category: "app",
     demolink: "https://sansiv-calculator.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Calculator",
   },
   {
-    id: 5,
+    id: 6,
     image: Hangman_Preview,
     title: "Hangman Game",
     category: "app",
     demolink: "https://sansiv-hangman-game.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Hangman-Game",
   },
   {
-    id: 6,
+    id: 1,
     image: BackgroundColorChanger_Preview,
     title: "Background Color Changer",
     category: "design",
     demolink: "https://sansiv-bg-color-changer.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Background-Color-Changer",
   },
   {
-    id: 7,
+    id: 2,
     image: QuizApp_Preview,
     title: "Quiz App",
     category: "web",
     demolink: "https://sansiv-quiz-app.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Quiz-App",
   },
   {
     id: 8,
     image: YoutubeClone_Preview,
-    title: "Youtube Clone",
+    title: "YouTube + Studio Clone",
     category: "web",
     demolink: "https://sansiv-youtube-clone.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/youtube-clone",
   },
 ];
 

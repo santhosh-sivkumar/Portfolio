@@ -1,5 +1,11 @@
 {
   "turboConsoleLog.includeFileNameAndLineNum": true,
   "turboConsoleLog.addSemicolonInTheEnd": true,
-  "cSpell.words": ["demolink", "Santhosh", "Santhosh's", "Sivakumar"]
+  "cSpell.words": [
+    "codelink",
+    "demolink",
+    "Santhosh",
+    "Santhosh's",
+    "Sivakumar"
+  ]
 }

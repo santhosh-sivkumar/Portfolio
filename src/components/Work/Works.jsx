@@ -4,7 +4,9 @@ import WorkItems from "./WorkItems";
 
 const Works = () => {
   const [selectedCategory, setSelectedCategory] = useState({ name: "all" });
-  const [filteredProjects, setFilteredProjects] = useState(projectsData);
+  const [filteredProjects, setFilteredProjects] = useState(
+    projectsData.sort((a, b) => b.id - a.id)
+  );
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
