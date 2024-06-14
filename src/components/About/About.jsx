@@ -4,6 +4,7 @@ import "./about.css";
 import AboutImg from "../../assets/Santhosh.jpg";
 import Info from "./Info";
 import RESUME from "../../assets/santhosh-resume.pdf";
+import { TailSpin } from "react-loader-spinner";
 
 const About = () => {
   const [downloading, setDownloading] = useState(false);
@@ -21,13 +22,19 @@ const About = () => {
       <span className="section__subtitle">My introduction</span>
 
       <div className="about__container container grid">
-        <img
-          src={AboutImg}
-          className="about__img"
-          alt="Santhosh"
-          loading="lazy"
-          title="Santhosh"
-        />
+        {!AboutImg ? (
+          <span className="tailspin">
+            <TailSpin color="var(--title-color)" height="40" width="40" />
+          </span>
+        ) : (
+          <img
+            src={AboutImg}
+            className="about__img"
+            alt="Santhosh"
+            loading="lazy"
+            title="Santhosh"
+          />
+        )}
 
         <div className="about__data">
           <Info />
