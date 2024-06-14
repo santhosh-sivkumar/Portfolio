@@ -64,7 +64,15 @@
 .work__button:hover .work__button-icon {
   transform: translateX(0.25rem);
 }
+/* tailspin */
 
+.tailspin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  height: 175px;
+}
 /* Active work*/
 .active-work {
   background-color: var(--title-color);

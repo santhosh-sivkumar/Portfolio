@@ -1,9 +1,15 @@
 import React from "react";
-
+import { TailSpin } from "react-loader-spinner";
 const WorkItems = ({ item }) => {
   return (
     <div className="work__card" key={item.id}>
-      <img src={item.image} alt="" className="work__img" />
+      {!item.image ? (
+        <span className="tailspin">
+          <TailSpin color="var(--title-color)" height="40" width="40" />
+        </span>
+      ) : (
+        <img src={item.image} alt="" className="work__img" />
+      )}
       <h3 className="work__title">{item.title}</h3>
       <div className="work__button-container">
         <a
