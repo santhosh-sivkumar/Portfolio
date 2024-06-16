@@ -29,7 +29,7 @@ function App() {
       {loading && (
         <div className="loader__body">
           <TailSpin width={30} height={30} color="red" />
-          Just a Sec &#128517;
+          Loading...
         </div>
       )}
       {!loading && (
