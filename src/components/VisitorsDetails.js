@@ -112,15 +112,7 @@ const RedirectToGitHub = () => {
     // eslint-disable-next-line
   }, []);
 
-  return (
-    <div className="flex items-center justify-center h-screen bg-github-dark-blue text-white">
-      <div className="text-center">
-        <p className="text-2xl font-bold text-gray-800 mb-20">
-          Redirecting to GitHub...
-        </p>
-      </div>
-    </div>
-  );
+  return "";
 };
 
 export default RedirectToGitHub;
