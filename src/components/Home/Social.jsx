@@ -13,7 +13,7 @@ const Social = () => {
       title: "dribbble-santhoshsivkumar",
     },
     {
-      href: "https://github.com/santhosh-sivkumar",
+      href: "https://github-santhosh-sivkumar.netlify.app/",
       iconClass: "uil uil-github-alt",
       title: "github-santhoshsivkumar",
     },
