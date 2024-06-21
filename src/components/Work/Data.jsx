@@ -6,6 +6,7 @@ import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
 import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
 import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
 import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Preview.png";
+import GitHubVisitorsInfo_Preview from "../../assets/project-images/GitHubVisitorsInfo_Preview.png";
 
 export const projectsData = [
   {
@@ -34,12 +35,20 @@ export const projectsData = [
     codelink: "https://github.com/santhosh-sivkumar/Todo-List",
   },
   {
-    id: 4,
+    id: 9,
     image: Calculator_Preview,
     title: "Calculator",
     category: "app",
     demolink: "https://sansiv-calculator.netlify.app/",
     codelink: "https://github.com/santhosh-sivkumar/Calculator",
+  },
+  {
+    id: 4,
+    image: GitHubVisitorsInfo_Preview,
+    title: "GitHub Visitors Info",
+    category: "app",
+    demolink: "https://github-visitors-info.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/github-visitors-info",
   },
   {
     id: 6,
