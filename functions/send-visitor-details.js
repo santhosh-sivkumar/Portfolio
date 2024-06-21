@@ -62,7 +62,7 @@ exports.handler = async (event, context) => {
     let mailOptions = {
       from: process.env.FROM_EMAIL, // Use environment variable for email address
       to: process.env.TO_EMAIL, // Use environment variable for recipient email address
-      subject: `Someone Checked Out Your Portfolio`,
+      subject: `From Portfolio: Someone Visited`,
       html: emailContent, // Use HTML content for the email body
     };
 
