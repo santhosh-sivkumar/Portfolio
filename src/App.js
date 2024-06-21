@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollUp from "./components/ScrollUp/ScrollUp";
 import Themes from "./components/Themes/Themes";
+import VisitorsDetails from "./components/VisitorsDetails";
 import { TailSpin } from "react-loader-spinner";
 //import BarLoader from "react-spinners/BarLoader";
 
@@ -28,14 +29,14 @@ function App() {
     <>
       {loading && (
         <div className="loader__body">
-          <TailSpin width={30} height={30} color="red" />
+          <TailSpin width={25} height={25} color="red" />
           Loading...
         </div>
       )}
       {!loading && (
         <>
           <Header />
-
+          <VisitorsDetails />
           <main className="main">
             <Home />
             <Themes />
