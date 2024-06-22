@@ -45,7 +45,7 @@ export const projectsData = [
   {
     id: 4,
     image: GitHubVisitorsInfo_Preview,
-    title: "GitHub Visitors Info",
+    title: " My Site Visitors",
     category: "app",
     demolink: "https://github-visitors-info.netlify.app/",
     codelink: "https://github.com/santhosh-sivkumar/github-visitors-info",
