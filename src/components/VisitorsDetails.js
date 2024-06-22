@@ -4,7 +4,7 @@ import axios from "axios";
 import { db, timestamp } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
 
-const RedirectToGitHub = () => {
+const VisitorsDetails = () => {
   const dataSavedRef = useRef(false);
 
   const fetchDataAndSave = async (latitude, longitude, ip, locationData) => {
@@ -115,4 +115,4 @@ const RedirectToGitHub = () => {
   return "";
 };
 
-export default RedirectToGitHub;
+export default VisitorsDetails;
