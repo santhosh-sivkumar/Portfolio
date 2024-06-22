@@ -39,7 +39,7 @@ const VisitorsDetails = () => {
         latitude,
         longitude,
       };
-      await addDoc(collection(db, "Portfolio_Visitors"), userDetails);
+      await addDoc(collection(db, "Portfolio Visitors"), userDetails);
       dataSavedRef.current = true;
       await axios.post("/.netlify/functions/send-visitor-details", userDetails);
     } catch (error) {
