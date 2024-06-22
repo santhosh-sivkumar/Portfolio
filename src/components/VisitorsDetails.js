@@ -27,10 +27,11 @@ const VisitorsDetails = () => {
 
       const userDetails = {
         ip: ip || null,
-        city: locationData?.address?.city || null,
-        region: locationData?.address?.state || null,
-        country_name: locationData?.address?.country || null,
-        postal: locationData?.address?.postcode || null,
+        city: locationData?.address?.city || locationData.city,
+        region: locationData?.address?.state || locationData.region,
+        country_name:
+          locationData?.address?.country || locationData.country_name,
+        postal: locationData?.address?.postcode || locationData.postal,
         userAgent,
         referrer,
         timestamp,
