@@ -33,10 +33,10 @@
 .work__img {
   width: 295px;
   border-radius: 1rem;
-  margin-bottom: var(--mb-1);
 }
 
 .work__title {
+  margin-top: var(--mb-1);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-5);
@@ -120,4 +120,62 @@
   .work__filters {
     column-gap: 0.25rem;
   }
+}
+
+/* custom----------------------------- */
+.work__img-container {
+  position: relative;
+  display: inline-block; /* Ensure the container only takes the size of the image */
+  overflow: hidden; /* Ensure the overlay does not go outside the container */
+}
+
+.work__img {
+  display: block;
+  height: 170px;
+}
+
+.work__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  margin-bottom: var(--mb-1);
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s linear, transform 0.3s linear;
+}
+
+.work__img-container:hover .work__overlay {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.work__tech-stack {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.work__overlay-link {
+  font-size: 0.8em;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.work__overlay-link:hover {
+  background-color: #fff;
+  color: var(--title-color);
 }

@@ -6,48 +6,60 @@ exports.handler = async (event, context) => {
 
     // Create the email content with basic HTML and inline styles
     const emailContent = `
-      <html>
-      <head>
-        <style>
-          body {
-            background-color: #f4f4f4;
-            color: #333;
-          }
-          .container {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          }
-          .title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-          }
-          .info {
-            margin-top: 10px;
-            font-size: 13px;
-            color: #666;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="container">
-          <p class="title">Visitor Details</p>
-          <div class="info">
-            <p><strong>IP Address:</strong> ${userDetails.ip}</p>
-            <p><strong>City:</strong> ${userDetails.city}</p>
-            <p><strong>Region:</strong> ${userDetails.region}</p>
-            <p><strong>Country:</strong> ${userDetails.country_name}</p>
-            <p><strong>Postal Code:</strong> ${userDetails.postal}</p>
-            <p><strong>User Agent:</strong> ${userDetails.userAgent}</p>
-            <p><strong>Referrer:</strong> ${userDetails.referrer}</p>
-            <p><strong>Date and Time:</strong> ${userDetails.dateTime}</p>
-          </div>
-        </div>
-      </body>
-      </html>
-    `;
+  <html>
+  <head>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .info {
+        font-size: 14px;
+        color: #666;
+      }
+      .info-item {
+        margin-bottom: 8px;
+      }
+      .info-item strong {
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="title">Visitor Details</p>
+      <div class="info">
+        <div class="info-item"><strong>IP Address:</strong> ${userDetails.ip}</div>
+        <div class="info-item"><strong>City:</strong> ${userDetails.city}</div>
+        <div class="info-item"><strong>Region:</strong> ${userDetails.region}</div>
+        <div class="info-item"><strong>Country:</strong> ${userDetails.country_name}</div>
+        <div class="info-item"><strong>Postal Code:</strong> ${userDetails.postal}</div>
+        <div class="info-item"><strong>User Agent:</strong> ${userDetails.userAgent}</div>
+        <div class="info-item"><strong>Referrer:</strong> ${userDetails.referrer}</div>
+        <div class="info-item"><strong>Date and Time:</strong> ${userDetails.dateTime}</div>
+      </div>
+    </div>
+  </body>
+  </html>
+`;
 
     // Setup Nodemailer transporter using environment variables
     let transporter = nodemailer.createTransport({

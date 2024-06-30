@@ -7,10 +7,12 @@ import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
 import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
 import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Preview.png";
 import GitHubVisitorsInfo_Preview from "../../assets/project-images/GitHubVisitorsInfo_Preview.png";
+import MERNStack_Preview from "../../assets/project-images/MERNStack_Preview.png";
 
 export const projectsData = [
   {
     id: 5,
+    techStack: "JS | React",
     image: TicTacToe_Preview,
     title: "Tic-Tac-Toe Game",
     category: "app",
@@ -18,7 +20,8 @@ export const projectsData = [
     codelink: "https://github.com/santhosh-sivkumar/Tic-Tac-Toe",
   },
   {
-    id: 7,
+    id: 8,
+    techStack: "React | Firebase",
     image: NotesApp_Preview,
     title: "Notes App",
     category: "web",
@@ -28,6 +31,7 @@ export const projectsData = [
 
   {
     id: 3,
+    techStack: "JS | React",
     image: TodoList_Preview,
     title: "Todo List",
     category: "web",
@@ -35,7 +39,8 @@ export const projectsData = [
     codelink: "https://github.com/santhosh-sivkumar/Todo-List",
   },
   {
-    id: 9,
+    id: 7,
+    techStack: "JS | React",
     image: Calculator_Preview,
     title: "Calculator",
     category: "app",
@@ -44,6 +49,7 @@ export const projectsData = [
   },
   {
     id: 4,
+    techStack: "React | Firebase | Tailwind",
     image: GitHubVisitorsInfo_Preview,
     title: "Site Visitors",
     category: "app",
@@ -52,6 +58,7 @@ export const projectsData = [
   },
   {
     id: 6,
+    techStack: "JS | React",
     image: Hangman_Preview,
     title: "Hangman Game",
     category: "app",
@@ -60,6 +67,7 @@ export const projectsData = [
   },
   {
     id: 1,
+    techStack: "React | Tailwind",
     image: BackgroundColorChanger_Preview,
     title: "Background Color Changer",
     category: "design",
@@ -68,6 +76,7 @@ export const projectsData = [
   },
   {
     id: 2,
+    techStack: "JS | React",
     image: QuizApp_Preview,
     title: "Quiz App",
     category: "web",
@@ -75,12 +84,22 @@ export const projectsData = [
     codelink: "https://github.com/santhosh-sivkumar/Quiz-App",
   },
   {
-    id: 8,
+    id: 10,
+    techStack: "React | Firebase | Tailwind | Redux",
     image: YoutubeClone_Preview,
     title: "Youtube + Studio Clone",
     category: "web",
     demolink: "https://sansiv-youtube-clone.netlify.app/",
     codelink: "https://github.com/santhosh-sivkumar/youtube-clone",
+  },
+  {
+    id: 9,
+    techStack: "MERN | Tailwind | TS",
+    image: MERNStack_Preview,
+    title: "MERN Stack App",
+    category: "web",
+    demolink: "https://sansiv-ecommerce.vercel.app/",
+    codelink: "https://github.com/santhosh-sivkumar/ecommerce",
   },
 ];
 
