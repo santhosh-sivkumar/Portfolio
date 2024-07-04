@@ -12,7 +12,7 @@ import Ecommerce_Preview from "../../assets/project-images/MERNStack_Preview.png
 export const projectsData = [
   {
     id: 5,
-    techStack: "JS | React",
+    techStack: "React | Router Dom",
     image: TicTacToe_Preview,
     title: "Tic-Tac-Toe Game",
     category: "app",
@@ -21,7 +21,7 @@ export const projectsData = [
   },
   {
     id: 8,
-    techStack: "React | Firebase",
+    techStack: "React | Firebase | Material Ui",
     image: NotesApp_Preview,
     title: "Notes App",
     category: "web",
@@ -31,7 +31,7 @@ export const projectsData = [
 
   {
     id: 3,
-    techStack: "JS | React",
+    techStack: "React | Tailwind CSS",
     image: TodoList_Preview,
     title: "Todo List",
     category: "web",
@@ -58,7 +58,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    techStack: "JS | React",
+    techStack: "React | TypeScript",
     image: Hangman_Preview,
     title: "Hangman Game",
     category: "app",
@@ -76,7 +76,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    techStack: "JS | React",
+    techStack: "React | JS",
     image: QuizApp_Preview,
     title: "Quiz App",
     category: "web",
