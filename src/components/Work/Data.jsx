@@ -7,7 +7,7 @@ import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
 import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
 import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Preview.png";
 import GitHubVisitorsInfo_Preview from "../../assets/project-images/GitHubVisitorsInfo_Preview.png";
-import MERNStack_Preview from "../../assets/project-images/MERNStack_Preview.png";
+import Ecommerce_Preview from "../../assets/project-images/MERNStack_Preview.png";
 
 export const projectsData = [
   {
@@ -94,10 +94,10 @@ export const projectsData = [
   },
   {
     id: 9,
-    techStack: "MERN | Tailwind | TS",
-    image: MERNStack_Preview,
-    title: "MERN Stack App",
-    category: "web",
+    techStack: "MERN | Tailwind | Redux",
+    image: Ecommerce_Preview,
+    title: "ECommerce Site",
+    category: "app",
     demolink: "https://sansiv-ecommerce.vercel.app/",
     codelink: "https://github.com/santhosh-sivkumar/ecommerce",
   },
