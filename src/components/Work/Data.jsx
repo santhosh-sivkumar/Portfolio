@@ -96,7 +96,7 @@ export const projectsData = [
     id: 9,
     techStack: "MERN | Tailwind | Redux",
     image: Ecommerce_Preview,
-    title: "ECommerce Site",
+    title: "Flipcart Clone",
     category: "app",
     demolink: "https://sansiv-ecommerce.vercel.app/",
     codelink: "https://github.com/santhosh-sivkumar/ecommerce",
