@@ -20,7 +20,7 @@ const Skills = () => {
     [
       { name: "Asp.Net", level: "Intermediate", icon: "bx bxl-microsoft" },
       { name: "Node Js", level: "Basic", icon: "bx bxl-nodejs" },
-      { name: "C#", level: "Advanced", icon: "bx bx-hash" },
+      { name: "MongoDb", level: "Basic", icon: "bx bxl-mongodb" },
     ],
     [
       { name: "MySQL", level: "Intermediate", icon: "bx bx-data" },
@@ -28,20 +28,29 @@ const Skills = () => {
       { name: "Firebase", level: "Intermediate", icon: "bx bxl-firebase" },
     ],
   ];
-  // const Tools = [
-  //   [{ name: "Git", level: "Intermediate", icon: "bx bxl-git" }],
-  //   [{ name: "GitHub", level: "Intermediate", icon: "bx bxl-github" }],
-  // ];
-  // const IDEs = [
-  //   [{ name: "VS Code", level: "Intermediate", icon: "bx bxl-visual-studio" }],
-  //   [
-  //     {
-  //       name: "Visual Studio",
-  //       level: "Intermediate",
-  //       icon: "bx bxl-visual-studio",
-  //     },
-  //   ],
-  // ];
+  const Tools = [
+    [{ name: "Git", level: "Intermediate", icon: "bx bxl-git" }],
+    [{ name: "GitHub", level: "Intermediate", icon: "bx bxl-github" }],
+    // [
+    //   {
+    //     name: "Visual Studio",
+    //     level: "Intermediate",
+    //     icon: "bx bxl-visual-studio",
+    //   },
+    //   { name: "VS Code", level: "Intermediate", icon: "bx bxl-visual-studio" },
+    // ],
+  ];
+
+  const IDEs = [
+    [{ name: "C#", level: "Intermediate", icon: "bx bx-hash" }],
+    [
+      {
+        name: "Express js",
+        level: "Intermediate",
+        icon: "bx bxl-javascript",
+      },
+    ],
+  ];
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
@@ -49,8 +58,8 @@ const Skills = () => {
       <div className="skills__container container grid">
         <SkillContent skillsTitle="Frontend" skillsGroup={Frontend} />
         <SkillContent skillsTitle="Backend" skillsGroup={Backend} />
-        {/* <SkillContent skillsTitle="Tools" skillsGroup={Tools} />
-        <SkillContent skillsTitle="IDEs" skillsGroup={IDEs} /> */}
+        <SkillContent skillsTitle="Tools" skillsGroup={Tools} />
+        <SkillContent skillsTitle="Others" skillsGroup={IDEs} />
       </div>
     </section>
   );
