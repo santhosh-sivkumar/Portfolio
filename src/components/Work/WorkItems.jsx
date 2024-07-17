@@ -28,7 +28,7 @@ const WorkItems = ({ item }) => {
       <h3 className="work__title">{item.title}</h3>
       <div className="work__button-container">
         <a
-          title={item.demolink}
+          title={item.codelink}
           href={item.codelink}
           target="_blank"
           rel="noreferrer"

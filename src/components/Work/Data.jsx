@@ -1,19 +1,9 @@
-import TicTacToe_Preview from "../../assets/project-images/TicTacToe_Preview.png";
-import BackgroundColorChanger_Preview from "../../assets/project-images/BackgroundColorChanger_Preview.png";
-import TodoList_Preview from "../../assets/project-images/TodoList_Preview.png";
-import Calculator_Preview from "../../assets/project-images/Calculator_Preview.png";
-import QuizApp_Preview from "../../assets/project-images/QuizApp_Preview.png";
-import Hangman_Preview from "../../assets/project-images/Hangman_Preview.png";
-import NotesApp_Preview from "../../assets/project-images/NotesApp_Preview.png";
-import YoutubeClone_Preview from "../../assets/project-images/YoutubeClone_Preview.png";
-import GitHubVisitorsInfo_Preview from "../../assets/project-images/GitHubVisitorsInfo_Preview.png";
-import Ecommerce_Preview from "../../assets/project-images/MERNStack_Preview.png";
-
 export const projectsData = [
   {
     id: 5,
     techStack: "React | Router Dom",
-    image: TicTacToe_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FTicTacToe_Preview.png?alt=media&token=b6cc10a2-866a-4d17-8681-90fece84b7dd",
     title: "Tic-Tac-Toe Game",
     category: "app",
     demolink: "https://sansiv-tic-tac-toe.netlify.app/",
@@ -22,8 +12,9 @@ export const projectsData = [
   {
     id: 8,
     techStack: "React | Firebase | Material Ui",
-    image: NotesApp_Preview,
-    title: "Notes App",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FNotesApp_Preview.png?alt=media&token=bb0f76d5-ce72-4589-a9cf-2b560f581490",
+    title: "Keep Notes",
     category: "web",
     demolink: "https://sansiv-notes-app.netlify.app/",
     codelink: "https://github.com/santhosh-sivkumar/Notes-App",
@@ -32,7 +23,8 @@ export const projectsData = [
   {
     id: 3,
     techStack: "React | Tailwind CSS",
-    image: TodoList_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FTodoList_Preview.png?alt=media&token=681b19ad-2d7d-4571-9b3c-7e6f0b20a348",
     title: "Todo List",
     category: "web",
     demolink: "https://sansiv-todo-list.netlify.app/",
@@ -41,7 +33,8 @@ export const projectsData = [
   {
     id: 7,
     techStack: "JS | React",
-    image: Calculator_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FCalculator_Preview.png?alt=media&token=c2befd15-e9c7-46ca-b603-3e3893988ecd",
     title: "Calculator",
     category: "app",
     demolink: "https://sansiv-calculator.netlify.app/",
@@ -50,7 +43,8 @@ export const projectsData = [
   {
     id: 4,
     techStack: "React | Firebase | Tailwind",
-    image: GitHubVisitorsInfo_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FGitHubVisitorsInfo_Preview.png?alt=media&token=dd909f0d-2ff0-49b2-958d-76d29ad621cf",
     title: "Site Visitors",
     category: "app",
     demolink: "https://github-visitors-info.netlify.app/",
@@ -59,7 +53,8 @@ export const projectsData = [
   {
     id: 6,
     techStack: "React | TypeScript",
-    image: Hangman_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FHangman_Preview.png?alt=media&token=d3fcf082-e90e-4f8d-b12c-38e3117a1b63",
     title: "Hangman Game",
     category: "app",
     demolink: "https://sansiv-hangman-game.netlify.app/",
@@ -68,7 +63,8 @@ export const projectsData = [
   {
     id: 1,
     techStack: "React | Tailwind",
-    image: BackgroundColorChanger_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FBackgroundColorChanger_Preview.png?alt=media&token=7c89df50-99e4-49ae-bfb3-667b93f20a30",
     title: "Background Color Changer",
     category: "design",
     demolink: "https://sansiv-bg-color-changer.netlify.app/",
@@ -77,7 +73,8 @@ export const projectsData = [
   {
     id: 2,
     techStack: "React | JS",
-    image: QuizApp_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FQuizApp_Preview.png?alt=media&token=b50f50d3-abfc-40c0-afba-5b80dc2e0300",
     title: "Quiz App",
     category: "web",
     demolink: "https://sansiv-quiz-app.netlify.app/",
@@ -86,7 +83,8 @@ export const projectsData = [
   {
     id: 10,
     techStack: "React | Firebase | Tailwind | Redux",
-    image: YoutubeClone_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FYoutubeClone_Preview.png?alt=media&token=0fedd4f8-b568-4275-b7ae-f922a533fd63",
     title: "Youtube + Studio Clone",
     category: "web",
     demolink: "https://sansiv-youtube-clone.netlify.app/",
@@ -95,7 +93,8 @@ export const projectsData = [
   {
     id: 9,
     techStack: "MERN | Tailwind | Redux",
-    image: Ecommerce_Preview,
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FMERNStack_Preview.png?alt=media&token=0a46c7ba-0dcb-4dc9-a57f-cec4f0080f21",
     title: "Flipcart Clone",
     category: "app",
     demolink: "https://sansiv-ecommerce.vercel.app/",
