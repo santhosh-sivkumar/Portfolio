@@ -54,15 +54,15 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <label title={myName} className="footer__codedBy">
+        <span className="footer__codedBy">
           Coded By
           <span className="footer__ownerName">{myName}</span>
-        </label>
+        </span>
 
-        <label className="footer__copy">
+        <span className="footer__copy">
           &#169; {new Date().getFullYear()} Created for Practice
           <i className="bx bx-wink-smile"></i>
-        </label>
+        </span>
       </div>
     </footer>
   );

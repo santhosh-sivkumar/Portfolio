@@ -1,0 +1,11 @@
+/* 
+  X-Content-Type-Options: nosniff
+  Cache-Control: max-age=31536000, immutable
+  Content-Security-Policy: frame-ancestors 'self'
+  X-XSS-Protection: 0
+
+/*.html
+  Cache-Control: max-age=0, must-revalidate
+
+/*.woff2
+  Content-Type: font/woff2
