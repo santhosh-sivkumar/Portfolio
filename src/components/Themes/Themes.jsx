@@ -26,7 +26,7 @@ const Themes = () => {
       <button
         title="themes"
         type="button"
-        className={`themes__button`}
+        className="themes__button"
         onClick={() => {
           setToggleState(!toggleState);
         }}
@@ -37,6 +37,15 @@ const Themes = () => {
           <i className="bx bx-x themes__icon"></i>
         )}
       </button>
+      <div
+        onTouchMove={() => {
+          setToggleState(false);
+        }}
+        onMouseEnter={() => {
+          setToggleState(false);
+        }}
+        className={toggleState === true ? "theme__out active" : "theme__out"}
+      ></div>
       <div
         className={
           toggleState === true ? "themes__model active-model" : "themes__model"
