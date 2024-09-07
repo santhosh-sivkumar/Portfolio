@@ -28,29 +28,29 @@ const Skills = () => {
       { name: "Firebase", level: "Intermediate", icon: "bx bxl-firebase" },
     ],
   ];
-  const Tools = [
-    [{ name: "Git", level: "Intermediate", icon: "bx bxl-git" }],
-    [{ name: "GitHub", level: "Intermediate", icon: "bx bxl-github" }],
-    // [
-    //   {
-    //     name: "Visual Studio",
-    //     level: "Intermediate",
-    //     icon: "bx bxl-visual-studio",
-    //   },
-    //   { name: "VS Code", level: "Intermediate", icon: "bx bxl-visual-studio" },
-    // ],
-  ];
+  // const Tools = [
+  //   [{ name: "Git", level: "Intermediate", icon: "bx bxl-git" }],
+  //   [{ name: "GitHub", level: "Intermediate", icon: "bx bxl-github" }],
+  //   // [
+  //   //   {
+  //   //     name: "Visual Studio",
+  //   //     level: "Intermediate",
+  //   //     icon: "bx bxl-visual-studio",
+  //   //   },
+  //   //   { name: "VS Code", level: "Intermediate", icon: "bx bxl-visual-studio" },
+  //   // ],
+  // ];
 
-  const IDEs = [
-    [{ name: "C#", level: "Intermediate", icon: "bx bx-hash" }],
-    [
-      {
-        name: "Express js",
-        level: "Intermediate",
-        icon: "bx bxl-javascript",
-      },
-    ],
-  ];
+  // const IDEs = [
+  //   [{ name: "C#", level: "Intermediate", icon: "bx bx-hash" }],
+  //   [
+  //     {
+  //       name: "Express js",
+  //       level: "Intermediate",
+  //       icon: "bx bxl-javascript",
+  //     },
+  //   ],
+  // ];
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
