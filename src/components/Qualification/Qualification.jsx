@@ -11,13 +11,13 @@ const Qualification = () => {
   const tabs = [
     {
       id: 1,
-      title: "Education",
-      icon: "uil uil-graduation-cap qualification__icon",
+      title: "Experience",
+      icon: "uil uil-briefcase-alt qualification__icon",
     },
     {
       id: 2,
-      title: "Experience",
-      icon: "uil uil-briefcase-alt qualification__icon",
+      title: "Education",
+      icon: "uil uil-graduation-cap qualification__icon",
     },
   ];
 
@@ -125,7 +125,7 @@ const Qualification = () => {
               }
             >
               {toggleState === tab.id
-                ? renderContent(tab.id === 1 ? educationData : experienceData)
+                ? renderContent(tab.id === 1 ? experienceData : educationData)
                 : null}
             </div>
           ))}

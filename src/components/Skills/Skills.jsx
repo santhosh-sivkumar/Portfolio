@@ -58,8 +58,8 @@ const Skills = () => {
       <div className="skills__container container grid">
         <SkillContent skillsTitle="Frontend" skillsGroup={Frontend} />
         <SkillContent skillsTitle="Backend" skillsGroup={Backend} />
-        <SkillContent skillsTitle="Tools" skillsGroup={Tools} />
-        <SkillContent skillsTitle="Others" skillsGroup={IDEs} />
+        {/* <SkillContent skillsTitle="Tools" skillsGroup={Tools} />
+        <SkillContent skillsTitle="Others" skillsGroup={IDEs} /> */}
       </div>
     </section>
   );

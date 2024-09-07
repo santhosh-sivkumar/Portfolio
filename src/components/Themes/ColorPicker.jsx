@@ -51,6 +51,7 @@ function ColorPicker({ handlehideThemesModel }) {
   );
 
   const handleColorChange = (event) => {
+    console.log(colors);
     const { name, value } = event.target;
     setColors((prevColors) => ({
       ...prevColors,
