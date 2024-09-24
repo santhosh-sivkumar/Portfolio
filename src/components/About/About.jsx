@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./about.css";
 import AboutImg from "../../assets/Santhosh.jpg";
 import Info from "./Info";
-import RESUME from "../../assets/santhosh-resume.pdf";
+import RESUME from "../../assets/Santhosh_Resume.pdf";
 import { TailSpin } from "react-loader-spinner";
 
 const About = () => {
@@ -45,7 +45,7 @@ const About = () => {
             technologies for innovative solutions.
           </p>
           <a
-            download="santhosh-resume.pdf"
+            download="Santhosh's Resume.pdf"
             href={RESUME}
             className="button button--flex"
             onClick={handleDownload}
