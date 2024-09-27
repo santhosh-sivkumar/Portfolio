@@ -11,7 +11,7 @@ const WorkItems = ({ item }) => {
       ) : (
         <div className="work__img-container">
           <img src={item.image} alt="" className="work__img" />
-          <div className="work__overlay">
+          <div className="work__overlay __top">
             <p className="work__tech-stack">{item.techStack}</p>
             <a
               title={item.demolink}
@@ -23,6 +23,7 @@ const WorkItems = ({ item }) => {
               Go to Live Link
             </a>
           </div>
+          <div className="work__overlay __bottom">Hover or Tap</div>
         </div>
       )}
       <h3 className="work__title">{item.title}</h3>
