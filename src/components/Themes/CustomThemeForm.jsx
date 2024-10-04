@@ -13,17 +13,30 @@ function CustomThemeForm({
   return (
     <>
       {colorProperties.map((property, index) => (
-        <label key={index} className="themes__model-title">
-          {property.label}
+        <div className="themes__form-group">
+          <label key={index} className="themes__model-title">
+            {property.label}
+          </label>
           <input
             className="themes__form-input"
-            type="text"
+            type="color"
             name={property.name}
             value={colors[property.name]}
             onChange={handleColorChange}
             autoComplete="color"
           />
-        </label>
+        </div>
+        // <label key={index} className="themes__model-title">
+        //   {property.label}
+        //   <input
+        //     className="themes__form-input"
+        //     type="text"
+        //     name={property.name}
+        //     value={colors[property.name]}
+        //     onChange={handleColorChange}
+        //     autoComplete="color"
+        //   />
+        // </label>
       ))}
       <ButtonComponent
         buttonTitle="Save"

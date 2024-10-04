@@ -12,7 +12,7 @@ let defaultThemes = [
   {
     name: "Classic Green",
     colors: {
-      textColor: "green",
+      textColor: "#00B300",
       backgroundColor: "",
       headerColor: "",
     },
@@ -20,7 +20,7 @@ let defaultThemes = [
   {
     name: "Classic Red",
     colors: {
-      textColor: "red",
+      textColor: "#FF2A00",
       backgroundColor: "",
       headerColor: "",
     },
@@ -28,25 +28,25 @@ let defaultThemes = [
   {
     name: "Pure Pink",
     colors: {
-      textColor: "black",
-      backgroundColor: "pink",
-      headerColor: "pink",
+      textColor: "#000000",
+      backgroundColor: "#ffc3de",
+      headerColor: "#ffc3de",
     },
   },
   {
     name: "Modern Orange",
     colors: {
-      textColor: "black",
-      backgroundColor: "darkorange",
-      headerColor: "darkgray",
+      textColor: "#000000",
+      backgroundColor: "#ff7a38",
+      headerColor: "#c2c2c2",
     },
   },
   {
     name: "Modern Red",
     colors: {
-      textColor: "black",
-      backgroundColor: "lightgray",
-      headerColor: "red",
+      textColor: "#000000",
+      backgroundColor: "#dadada",
+      headerColor: "#e6210c",
     },
   },
   // Add more theme defaults as needed

@@ -38,10 +38,13 @@ const Themes = () => {
         )}
       </button>
       <div
-        onTouchMove={() => {
-          setToggleState(false);
-        }}
-        onMouseEnter={() => {
+        // onTouchMove={() => {
+        //   setToggleState(false);
+        // }}
+        // onMouseEnter={() => {
+        //   setToggleState(false);
+        // }}
+        onClick={() => {
           setToggleState(false);
         }}
         className={toggleState === true ? "theme__out active" : "theme__out"}

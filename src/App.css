@@ -3,6 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
+  user-select: none;
   --header-height: 3rem;
 
   /*========== Colors ==========*/
