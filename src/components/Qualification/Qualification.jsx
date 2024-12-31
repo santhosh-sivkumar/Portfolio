@@ -41,6 +41,11 @@ const Qualification = () => {
 
   const experienceData = [
     {
+      title: "Software Engineer",
+      subtitle: "Lionbridge Technologies PVT LTD - Chennai, TN",
+      calendar: " JAN 2025 - Present",
+    },
+    {
       title: "Software Engineer L3",
       subtitle: "ClaySys Technologies PVT LTD - Coimbatore, TN",
       calendar: " OCT 2022 - OCT 2023",
