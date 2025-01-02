@@ -27,7 +27,7 @@ const VisitorsDetails = () => {
 
       const userDetails = {
         ip: ip || null,
-        city: locationData?.address?.city || locationData.city,
+        city: locationData?.address?.city || locationData?.city || null,
         region: locationData?.address?.state || locationData.region,
         country_name:
           locationData?.address?.country || locationData.country_name,
