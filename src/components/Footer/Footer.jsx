@@ -60,7 +60,7 @@ const Footer = () => {
         </span>
 
         <span className="footer__copy">
-          &#169; {new Date().getFullYear()} Created for Practice
+          &#169; 2024 Created for Practice
           <i className="bx bx-wink-smile"></i>
         </span>
       </div>
