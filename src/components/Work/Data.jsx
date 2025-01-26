@@ -100,6 +100,16 @@ export const projectsData = [
     demolink: "https://sansiv-ecommerce.vercel.app/",
     codelink: "https://github.com/santhosh-sivkumar/ecommerce",
   },
+  {
+    id: 10,
+    techStack: "React | Tailwind | Redux | Framer Motion",
+    image:
+      "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FRecipeApp_Preview.png?alt=media&token=e2d7b189-02aa-4d45-9fee-43a1a1cbbbd2",
+    title: "Recipe App",
+    category: "app",
+    demolink: "https://sansiv-recipe-app.netlify.app/",
+    codelink: "https://github.com/santhosh-sivkumar/Recipe-App",
+  },
 ];
 
 export const projectsNav = [
