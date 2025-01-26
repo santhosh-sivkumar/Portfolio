@@ -102,7 +102,7 @@ export const projectsData = [
   },
   {
     id: 10,
-    techStack: "React | Tailwind | Redux | Framer Motion",
+    techStack: "React | Framer Motion",
     image:
       "https://firebasestorage.googleapis.com/v0/b/chat-app-ed074.appspot.com/o/portfolio%2FRecipeApp_Preview.png?alt=media&token=e2d7b189-02aa-4d45-9fee-43a1a1cbbbd2",
     title: "Recipe App",
